@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coordinate geometry- FreeEdu Nepal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar (same as index.html) -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">FreeEdu Nepal</a>
+      <button class="navbar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="navbar-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="english.html">English</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="tests.html">Practice</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Coordinate geometry</h1>
+      <p>Learn about points, lines, circles, conics, formulas, and solved examples ✅</p>
+    </div>
+  </section>
+<!-- Content Section --> <section class="content"> <div class="container"> <!-- Overview --> <!-- Overview --> <div class="card" id="overview"> <h2>Overview</h2> <p><strong>Definition:</strong> Coordinate Geometry (Analytic Geometry) studies geometric figures using a coordinate system — typically the Cartesian plane — by representing points as ordered pairs (x, y) and expressing curves and lines with algebraic equations.</p>          <h3>Key Concepts:</h3>
+                <h3>Basic Concepts & Formulas:</h3>
+        <p>• <strong>Distance Formula:</strong> Distance between P(x₁,y₁) and Q(x₂,y₂): <em>d = √[(x₂−x₁)² + (y₂−y₁)²]</em>.<br>
+        • <strong>Midpoint Formula:</strong> Midpoint of PQ: <em>((x₁+x₂)/2, (y₁+y₂)/2)</em>.<br>
+        • <strong>Section Formula (Internal, ratio m:n):</strong> Point dividing P(x₁,y₁) and Q(x₂,y₂) internally in ratio m:n is <em>((m x₂ + n x₁)/(m+n), (m y₂ + n y₁)/(m+n))</em>.<br>
+        • <strong>Slope (Gradient):</strong> Slope of line through P and Q: <em>m = (y₂−y₁)/(x₂−x₁)</em> (vertical line: undefined).<br>
+        • <strong>Angle between lines with slopes m₁ and m₂:</strong> <em>tan θ = |(m₂ − m₁)/(1 + m₁ m₂)|</em>.<br>
+        • <strong>Condition for parallel/perpendicular:</strong> Parallel ⇔ m₁ = m₂. Perpendicular ⇔ m₁·m₂ = −1.<br>
+        • <strong>Equation of a line:</strong> Point–slope: <em>y − y₁ = m(x − x₁)</em>. Two-point: <em>(y−y₁)/(y₂−y₁) = (x−x₁)/(x₂−x₁)</em>. Slope-intercept: <em>y = mx + c</em>. General: <em>Ax + By + C = 0</em>.<br>
+        • <strong>Area of triangle (coordinates):</strong> For (x₁,y₁),(x₂,y₂),(x₃,y₃): <em>Area = 1/2 | x₁(y₂−y₃)+x₂(y₃−y₁)+x₃(y₁−y₂) |</em>.<br>
+        • <strong>Collinearity:</strong> Three points are collinear ⇔ area (above determinant) = 0 (or slopes equal).<br>
+        • <strong>Circle (standard):</strong> Center (h,k), radius r: <em>(x−h)² + (y−k)² = r²</em>.<br>
+        • <strong>Conic sections (standard forms):</strong> Parabola: <em>y² = 4ax</em> (or rotated forms). Ellipse: <em>x²/a² + y²/b² = 1</em>. Hyperbola: <em>x²/a² − y²/b² = 1</em>.<br>
+        • <strong>Locus:</strong> Set of points satisfying a given geometric condition expressed algebraically (e.g., locus of points equidistant from a point and a line is a parabola).</p>
+        
+        <h3>Advanced Tools / Tricks:</h3>
+        <p>• Use vector form and dot/cross products for projection, perpendicularity, angles, and area.<br>
+        • Use coordinate transformations (translation/rotation) to simplify conics or eliminate cross-terms.<br>
+        • For many contest problems, place convenient coordinates (origin, axes along sides) to simplify calculations.<br>
+        • Use symmetry and parametric forms (x = a cos t, y = b sin t for ellipse) when helpful.</p>
+    </div>
+ <!-- Examples -->
+    <div class="card" id="examples">
+        <h2>Examples</h2>
+        
+        <div class="example">
+            <h3>Example 1: Distance Between Two Points</h3>
+            <p><strong>Given:</strong> P(3, 4) and Q(−1, 2).<br>
+            <strong>Find:</strong> Distance PQ.<br>
+            <strong>Solution:</strong> d = √[(−1−3)² + (2−4)²] = √[(−4)² + (−2)²] = √(16 + 4) = √20 = 2√5.<br>
+            <strong>Explanation:</strong> Applied the distance formula directly.</p>
+        </div>
+
+        <div class="example">
+            <h3>Example 2: Midpoint & Section Formula</h3>
+            <p><strong>Given:</strong> A(1, 2) and B(5, 8).<br>
+            <strong>Find:</strong> Midpoint of AB and the point dividing AB internally in ratio 1:2 (A to B is 1:2).<br>
+            <strong>Solution:</strong> Midpoint = ((1+5)/2, (2+8)/2) = (3, 5).<br>
+            Point in ratio 1:2 (m:n with m=1 at B, n=2 at A by formula convention) = ((1·5 + 2·1)/(1+2), (1·8 + 2·2)/(1+2)) = ( (5+2)/3, (8+4)/3 ) = (7/3, 12/3) = (7/3, 4).<br>
+            <strong>Explanation:</strong> Used midpoint formula and internal section formula.</p>
+        </div>
+
+        <div class="example">
+            <h3>Example 3: Equation of Line through Two Points</h3>
+            <p><strong>Given:</strong> Points (2, 3) and (5, −3).<br>
+            <strong>Find:</strong> Equation of the line in slope-intercept form.<br>
+            <strong>Solution:</strong> Slope m = (−3 − 3)/(5 − 2) = −6/3 = −2. Use point-slope with (2,3): y − 3 = −2(x − 2) ⇒ y − 3 = −2x + 4 ⇒ y = −2x + 7.<br>
+            <strong>Explanation:</strong> Compute slope then use point-slope form.</p>
+        </div>
+
+        <div class="example">
+            <h3>Example 4: Area of a Triangle Using Coordinates</h3>
+            <p><strong>Given:</strong> Vertices (0,0), (4,0), (0,3).<br>
+            <strong>Find:</strong> Area.<br>
+            <strong>Solution:</strong> Area = 1/2 |0(0−3) + 4(3−0) + 0(0−0)| = 1/2 |0 + 12 + 0| = 6.<br>
+            <strong>Explanation:</strong> Determinant formula simplifies to 1/2 · base · height for right triangle.</p>
+        </div>
+
+        <div class="example">
+            <h3>Example 5: Equation of a Circle</h3>
+            <p><strong>Given:</strong> Centre C(2, −1) and radius r = 3.<br>
+            <strong>Find:</strong> Equation of the circle.<br>
+            <strong>Solution:</strong> (x − 2)² + (y + 1)² = 9.<br>
+            <strong>Explanation:</strong> Standard circle equation (x − h)² + (y − k)² = r².</p>
+        </div>
+
+        <div class="example">
+            <h3>Example 6: Collinearity Test</h3>
+            <p><strong>Given:</strong> Points (1,2), (2,4), (3,6).<br>
+            <strong>Find:</strong> Are they collinear?<br>
+            <strong>Solution:</strong> Slope between first two = (4−2)/(2−1) = 2. Slope between last two = (6−4)/(3−2) = 2. Slopes equal ⇒ points are collinear.<br>
+            <strong>Explanation:</strong> Equal slopes (or zero area via determinant) imply collinearity.</p>
+        </div>
+    </div>
+
+  <!-- Questions -->
+    <div class="card" id="questions">
+        <h2>Practice Questions</h2>
+        
+        <div class="question">
+            <h4>Question 1:</h4>
+            <p>What is the distance between P(3,4) and Q(−1,2)?<br>
+            a) √10<br>
+            b) 2√5<br>
+            c) √20/2<br>
+            d) 5</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 2:</h4>
+            <p>Midpoint of A(1,2) and B(5,8) is:<br>
+            a) (2, 5)<br>
+            b) (3, 5)<br>
+            c) (6, 10)<br>
+            d) (−2, −3)</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 3:</h4>
+            <p>Slope of the line passing through (2,3) and (5,−3) is:<br>
+            a) 2<br>
+            b) −2<br>
+            c) −1/2<br>
+            d) 1/2</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 4:</h4>
+            <p>Which of the following lines is perpendicular to y = 2x + 3?<br>
+            a) y = 1/2 x − 4<br>
+            b) y = −1/2 x + 1<br>
+            c) y = 2x − 1<br>
+            d) y = −2x + 5</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 5:</h4>
+            <p>Equation of the circle with centre (2, −1) and radius 3 is:<br>
+            a) (x + 2)² + (y − 1)² = 9<br>
+            b) (x − 2)² + (y + 1)² = 9<br>
+            c) (x − 2)² + (y − 1)² = 3<br>
+            d) (x − 2) + (y + 1) = 9</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 6:</h4>
+            <p>The area of triangle with vertices (0,0), (4,0) and (0,3) equals:<br>
+            a) 12<br>
+            b) 6<br>
+            c) 7<br>
+            d) 24</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 7:</h4>
+            <p>The point which divides the line segment joining (2, −1) and (8, 5) internally in the ratio 1:2 (from first point to second) is:<br>
+            a) (4, 1)<br>
+            b) (6, 3)<br>
+            c) (3⅓, 1⅓)<br>
+            d) (5, 2)</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 8:</h4>
+            <p>Are the points (1,2), (2,4), (3,6) collinear?<br>
+            a) Yes<br>
+            b) No<br>
+            c) Only first two are collinear<br>
+            d) Only last two are collinear</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 9:</h4>
+            <p>Find the eccentricity e of the ellipse given by x²/9 + y²/4 = 1.<br>
+            a) √5/3<br>
+            b) 2/3<br>
+            c) 3/2<br>
+            d) √5/2</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 10:</h4>
+            <p>Equation of the perpendicular bisector of the segment joining (1,1) and (5,3) is:<br>
+            a) y = −2x + 8<br>
+            b) y = 2x − 4<br>
+            c) x + 2y = 7<br>
+            d) y = −1/2 x + 4</p>
+        </div>
+    </div>
+    <!-- Answer Key -->
+    <div class="card" id="answer-key">
+        <h2>Answer Key</h2>
+        
+        <div class="answer">
+            <h4>Answer 1:</h4>
+            <p>Answer: b) 2√5.<br>
+            <strong>Explanation:</strong> d = √[(−1−3)² + (2−4)²] = √(16+4) = √20 = 2√5.</p>
+        </div>
+
+        <div class="answer">
+            <h4>Answer 2:</h4>
+            <p>Answer: b) (3, 5).<br>
+            <strong>Explanation:</strong> Midpoint = ((1+5)/2, (2+8)/2) = (3,5).</p>
+        </div>
+
+        <div class="answer">
+            <h4>Answer 3:</h4>
+            <p>Answer: b) −2.<br>
+            <strong>Explanation:</strong> m = (−3−3)/(5−2) = −6/3 = −2.</p>
+        </div>
+
+        <div class="answer">
+            <h4>Answer 4:</h4>
+            <p>Answer: b) y = −1/2 x + 1.<br>
+            <strong>Explanation:</strong> Lines perpendicular to y = 2x + 3 must have slope −1/2.</p>
+        </div>
+
+        <div class="answer">
+            <h4>Answer 5:</h4>
+            <p>Answer: b) (x − 2)² + (y + 1)² = 9.<br>
+            <strong>Explanation:</strong> Standard form (x − h)² + (y − k)² = r² with (h,k) = (2,−1), r = 3.</p>
+        </div>
+
+        <div class="answer">
+            <h4>Answer 6:</h4>
+            <p>Answer: b) 6.<br>
+            <strong>Explanation:</strong> Right triangle with base = 4 and height = 3 ⇒ Area = 1/2 · 4 · 3 = 6.</p>
+        </div>
+
+        <div class="answer">
+            <h4>Answer 7:</h4>
+            <p>Answer: a) (4, 1).<br>
+            <strong>Explanation:</strong> For points (2,−1) and (8,5) divided internally in ratio 1:2 (from first to second): x = (1·8 + 2·2)/3 = (8+4)/3 = 4, y = (1·5 + 2·(−1))/3 = (5−2)/3 = 1.</p>
+        </div>
+
+        <div class="answer">
+            <h4>Answer 8:</h4>
+            <p>Answer: a) Yes.<br>
+            <strong>Explanation:</strong> Slope (1st,2nd) = (4−2)/(2−1) = 2; slope (2nd,3rd) = (6−4)/(3−2) = 2 ⇒ all three have same slope ⇒ collinear.</p>
+        </div>
+
+        <div class="answer">
+            <h4>Answer 9:</h4>
+            <p>Answer: a) √5/3.<br>
+            <strong>Explanation:</strong> For ellipse x²/a² + y²/b² = 1 with a² = 9, b² = 4 (a > b). e = √(1 − b²/a²) = √(1 − 4/9) = √(5/9) = √5/3.</p>
+        </div>
+
+        <div class="answer">
+            <h4>Answer 10:</h4>
+            <p>Answer: a) y = −2x + 8.<br>
+            <strong>Explanation:</strong> Midpoint of (1,1) and (5,3) is (3,2). Slope of segment = (3−1)/(5−1) = 2/4 = 1/2. Perpendicular slope = −2. Equation: y−2 = −2(x−3) ⇒ y = −2x + 8.</p>
+        </div>
+
+</div>
+
+</section>
+    <script src="script.js"></script>
+</body>
+</html>

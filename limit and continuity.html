@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limit and Continuity  - FreeEdu Nepal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar (same as index.html) -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">FreeEdu Nepal</a>
+      <button class="navbar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="navbar-menu">
+                <ul class="navbar-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="english.html">English</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="tests.html">Practice</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Limit and Continuity </h1>
+      <p>Learn about Limit and Continuity concepts, operations and solved examples ✅</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+<section class="content">
+    <div class="container">
+        <!-- Overview -->
+        <div class="card" id="overview">
+            <h2>Overview</h2>
+            <p><strong>Definition:</strong> The limit of a function at a point is the value that the function approaches as the input approaches that point. Continuity means the function has no breaks, jumps, or holes at a given point.</p>
+
+            <h3>Types of Limits:</h3>
+            <p><strong>1. Finite Limit:</strong> Limit exists and is finite.<br>
+            Example: lim x→2 (x²) = 4</p>
+
+            <p><strong>2. Infinite Limit:</strong> Limit approaches infinity.<br>
+            Example: lim x→0 (1/x²) = ∞</p>
+
+            <p><strong>3. One-Sided Limit:</strong> Limit approached from left or right.<br>
+            Example: lim x→0⁺ (1/x) = ∞, lim x→0⁻ (1/x) = -∞</p>
+
+            <p><strong>4. Limits at Infinity:</strong> Limit as x → ∞ or -∞.<br>
+            Example: lim x→∞ (1/x) = 0</p>
+
+            <h3>Continuity:</h3>
+            <p>• A function f(x) is continuous at x = a if:<br>
+            1) f(a) is defined<br>
+            2) lim x→a f(x) exists<br>
+            3) lim x→a f(x) = f(a)</p>
+
+            <h3>Types of Discontinuity:</h3>
+            <p><strong>1. Removable:</strong> Limit exists but f(a) ≠ limit.<br>
+            <strong>2. Jump:</strong> Left-hand and right-hand limits exist but are not equal.<br>
+            <strong>3. Infinite:</strong> Limit approaches infinity.</p>
+
+            <h3>Key Formulas:</h3>
+            <p>• lim x→0 (sinx)/x = 1<br>
+            • lim x→0 (1-cosx)/x = 0<br>
+            • lim x→∞ (1 + 1/x)^x = e<br>
+            • lim x→0 (1+x)^k = 1</p>
+        </div>
+
+        <!-- Examples -->
+        <div class="card" id="examples">
+            <h2>Examples</h2>
+
+            <div class="example">
+                <h3>Example 1: Basic Limit</h3>
+                <p><strong>Given:</strong> lim x→3 (2x + 5)<br>
+                <strong>Solution:</strong> Substitute x=3 → 2*3+5=11</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 2: Limit Using Factorization</h3>
+                <p><strong>Given:</strong> lim x→2 (x² - 4)/(x - 2)<br>
+                <strong>Solution:</strong> Factor numerator: (x-2)(x+2)/(x-2) → x+2 → Substitute x=2 → 4</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 3: Trigonometric Limit</h3>
+                <p><strong>Given:</strong> lim x→0 (sin3x)/x<br>
+                <strong>Solution:</strong> lim x→0 (sin3x)/x = lim x→0 (3sin3x)/(3x) = 3*1 = 3</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 4: One-Sided Limit</h3>
+                <p><strong>Given:</strong> f(x) = { x², x<0; x+1, x≥0 }, find lim x→0⁻ f(x) and lim x→0⁺ f(x)<br>
+                <strong>Solution:</strong> Left-hand: 0²=0; Right-hand: 0+1=1 → Limit does not exist at x=0</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 5: Continuity Check</h3>
+                <p><strong>Given:</strong> f(x) = { x², x≠1; 2, x=1 }, check continuity at x=1<br>
+                <strong>Solution:</strong> lim x→1 f(x) = 1 ≠ f(1)=2 → Discontinuous (removable)</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 6: Limit at Infinity</h3>
+                <p><strong>Given:</strong> lim x→∞ (5x² + 3)/(2x² + 7)<br>
+                <strong>Solution:</strong> Divide numerator and denominator by x² → 5/2</p>
+            </div>
+        </div>
+
+        <!-- Questions -->
+        <div class="card" id="questions">
+            <h2>Practice Questions</h2>
+
+            <div class="question">
+                <h4>Question 1:</h4>
+                <p>Evaluate lim x→0 (tanx)/x.<br>
+                a) 0<br>
+                b) 1<br>
+                c) ∞<br>
+                d) Does not exist</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 2:</h4>
+                <p>lim x→2 (x² - 4)/(x - 2) = ?<br>
+                a) 2<br>
+                b) 3<br>
+                c) 4<br>
+                d) 5</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 3:</h4>
+                <p>Check continuity of f(x) = { x², x≠1; 1, x=1 } at x=1.<br>
+                a) Continuous<br>
+                b) Discontinuous (removable)<br>
+                c) Discontinuous (jump)<br>
+                d) None</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 4:</h4>
+                <p>lim x→0 (1-cos2x)/x² = ?<br>
+                a) 0<br>
+                b) 1<br>
+                c) 2<br>
+                d) 4</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 5:</h4>
+                <p>Find lim x→∞ (3x³ + x)/(x³ - 2x)<br>
+                a) 1<br>
+                b) 2<br>
+                c) 3<br>
+                d) ∞</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 6:</h4>
+                <p>lim x→0⁺ 1/x = ?<br>
+                a) 0<br>
+                b) ∞<br>
+                c) -∞<br>
+                d) Does not exist</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 7:</h4>
+                <p>lim x→0 (sin5x)/(7x) = ?<br>
+                a) 0<br>
+                b) 5/7<br>
+                c) 7/5<br>
+                d) 1</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 8:</h4>
+                <p>Check if f(x) = 1/x is continuous at x=0.<br>
+                a) Yes<br>
+                b) No<br>
+                c) Only left-continuous<br>
+                d) Only right-continuous</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 9:</h4>
+                <p>lim x→∞ (2x² + 3x + 1)/(x² + x - 1) = ?<br>
+                a) 1<br>
+                b) 2<br>
+                c) ∞<br>
+                d) 0</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 10:</h4>
+                <p>f(x) = { x+2, x<1; 3x-1, x≥1 }, check continuity at x=1.<br>
+                a) Continuous<br>
+                b) Discontinuous (jump)<br>
+                c) Discontinuous (removable)<br>
+                d) None</p>
+            </div>
+        </div>
+
+        <!-- Answer Key -->
+        <div class="card" id="answer-key">
+            <h2>Answer Key</h2>
+
+            <div class="answer">
+                <h4>Answer 1:</h4>
+                <p>b) 1</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 2:</h4>
+                <p>c) 4</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 3:</h4>
+                <p>b) Discontinuous (removable)</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 4:</h4>
+                <p>c) 2</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 5:</h4>
+                <p>c) 3</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 6:</h4>
+                <p>b) ∞</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 7:</h4>
+                <p>b) 5/7</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 8:</h4>
+                <p>b) No</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 9:</h4>
+                <p>b) 2</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 10:</h4>
+                <p>b) Discontinuous (jump)</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vector - FreeEdu Nepal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar (same as index.html) -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">FreeEdu Nepal</a>
+      <button class="navbar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="navbar-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="english.html">English</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="tests.html">Practice</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Vector</h1>
+      <p>Learn about vector concepts, operations and solved examples ✅</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+<section class="content">
+    <div class="container">
+        <!-- Overview -->
+        <div class="card" id="overview">
+            <h2>Overview</h2>
+            <p><strong>Definition:</strong> A vector is a quantity that has both magnitude and direction. Represented as an arrow or in component form.</p>
+
+            <h3>Types of Vectors:</h3>
+            <p><strong>1. Zero Vector:</strong> Vector with magnitude 0<br>Example: 0</p>
+            <p><strong>2. Unit Vector:</strong> Vector with magnitude 1 along x, y, z axes<br>Example: î, ĵ, k̂</p>
+            <p><strong>3. Equal Vectors:</strong> Same magnitude and direction<br>Example: A = B</p>
+            <p><strong>4. Negative Vectors:</strong> Opposite direction<br>Example: If A = 3i + 4j, then -A = -3i - 4j</p>
+            <p><strong>5. Position Vector:</strong> Represents position of a point relative to origin<br>Example: P(x,y,z) → r = xî + yĵ + zk̂</p>
+
+            <h3>Vector Operations:</h3>
+            <p>• Addition: A + B = (ax+bx, ay+by, az+bz)<br>
+            • Subtraction: A - B = (ax-bx, ay-by, az-bz)<br>
+            • Scalar Multiplication: kA = (kax, kay, kaz)<br>
+            • Dot Product: A · B = axbx + ayby + azbz = |A||B|cosθ<br>
+            • Cross Product: |A × B| = |A||B|sinθ; direction by right-hand rule<br>
+            • Magnitude: |A| = √(ax² + ay² + az²)<br>
+            • Unit Vector: Â = A/|A|</p>
+        </div>
+
+        <!-- Examples -->
+        <div class="card" id="examples">
+            <h2>Examples</h2>
+
+            <div class="example">
+                <h3>Example 1: Vector Addition</h3>
+                <p>A = 2i + 3j, B = i + 4j → A + B = 3i + 7j</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 2: Vector Subtraction</h3>
+                <p>A = 5i + 2j, B = 3i + 7j → A - B = 2i - 5j</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 3: Dot Product</h3>
+                <p>A = 2i + 3j, B = i + 4j → A · B = 2 + 12 = 14</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 4: Cross Product</h3>
+                <p>A = i + 2j, B = 3i + j → A × B = -5k</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 5: Magnitude & Unit Vector</h3>
+                <p>A = 3i + 4j → |A| = 5, Unit vector = (3/5)i + (4/5)j</p>
+            </div>
+        </div>
+
+        <!-- Questions -->
+        <div class="card" id="questions">
+            <h2>Practice MCQs</h2>
+
+            <div class="question">
+                <h4>Question 1:</h4>
+                <p>If A = i + 2j and B = 2i - j, find A · B.<br>
+                a) 0<br>
+                b) 1<br>
+                c) 4<br>
+                d) -1</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 2:</h4>
+                <p>Which of the following vectors is a unit vector?<br>
+                a) 3i + 4j<br>
+                b) i + j + k<br>
+                c) (1/√2)i + (1/√2)j<br>
+                d) 2i - j</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 3:</h4>
+                <p>If A × B = 0, which of the following is true?<br>
+                a) A and B are perpendicular<br>
+                b) A and B are parallel<br>
+                c) |A| = |B|<br>
+                d) None of the above</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 4:</h4>
+                <p>Find the magnitude of vector A = 3i - 4j + 12k.<br>
+                a) 13<br>
+                b) 14<br>
+                c) 15<br>
+                d) 12</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 5:</h4>
+                <p>Find the angle between vectors A = i + j and B = i - j.<br>
+                a) 30°<br>
+                b) 45°<br>
+                c) 60°<br>
+                d) 90°</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 6:</h4>
+                <p>Projection of vector A = 3i + 4j on B = i + 2j is:<br>
+                a) (3/5)i + (4/5)j<br>
+                b) (11/5)i + (22/5)j<br>
+                c) 5i + 6j<br>
+                d) 2i + 3j</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 7:</h4>
+                <p>Vector from P(1,2,3) to Q(4,0,5) is:<br>
+                a) 3i - 2j + 2k<br>
+                b) -3i + 2j - 2k<br>
+                c) 4i + 2j + 5k<br>
+                d) i + j + k</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 8:</h4>
+                <p>If vectors A = i + 2j + 3k, B = 2i - j + k, C = 3i + 2j - 2k, are they coplanar?<br>
+                a) Yes<br>
+                b) No<br>
+                c) Only A and B<br>
+                d) Cannot determine</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 9:</h4>
+                <p>Unit vector along vector A = 2i - 2j + k is:<br>
+                a) (2/3)i - (2/3)j + (1/3)k<br>
+                b) (1/3)i + (1/3)j + (1/3)k<br>
+                c) (2/√9)i - (2/√9)j + (1/√9)k<br>
+                d) i - j + k</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 10:</h4>
+                <p>The vector equation of line passing through P(1,0,2) and Q(3,2,5) is:<br>
+                a) r = (1,0,2) + t(3,2,5)<br>
+                b) r = (1,0,2) + t(2,2,3)<br>
+                c) r = (0,1,2) + t(2,2,3)<br>
+                d) r = (1,2,3) + t(3,2,5)</p>
+            </div>
+        </div>
+
+        <!-- Answer Key -->
+        <div class="card" id="answer-key">
+            <h2>Answer Key</h2>
+
+            <div class="answer">
+                <h4>Answer 1:</h4>
+                <p>A · B = (1)(2) + (2)(-1) = 2 - 2 = 0 → a) 0</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 2:</h4>
+                <p>c) (1/√2)i + (1/√2)j</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 3:</h4>
+                <p>b) A and B are parallel</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 4:</h4>
+                <p>|A| = √(3² + (-4)² + 12²) = √(9+16+144)=√169=13 → a) 13</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 5:</h4>
+                <p>cosθ = (A·B)/(|A||B|) = (1*1 +1*(-1))/(√2*√2) = 0 → θ = 90° → d) 90°</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 6:</h4>
+                <p>b) (11/5)i + (22/5)j</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 7:</h4>
+                <p>a) 3i - 2j + 2k</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 8:</h4>
+                <p>a) Yes, A · (B × C) = 0 → coplanar</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 9:</h4>
+                <p>c) (2/√9)i - (2/√9)j + (1/√9)k = (2/3)i - (2/3)j + (1/3)k</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 10:</h4>
+                <p>b) r = (1,0,2) + t(2,2,3)</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>

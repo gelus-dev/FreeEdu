@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relations and Functions - FreeEdu Nepal</title>
+  <link rel="stylesheet" href="style.css">
+  <ul class="navbar-menu">
+                <li><a href="#" class="active">Home</a></li>
+                                <li><a href="english.html">English</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="tests.html">Tests</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+</head>
+<body>
+<!-- Navbar (same as index.html) -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">FreeEdu Nepal</a>
+      <button class="navbar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="navbar-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="english.html">English</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="tests.html">Practice</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Relations and Functions</h1>
+      <p>Learn about Relations and Functions with solved examples and Questions✅</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+<section class="content">
+    <div class="container">
+        <!-- Overview -->
+        <div class="card" id="overview">
+            <h2>Overview</h2>
+            <p><strong>Definition:</strong> A relation is a set of ordered pairs. A function is a special type of relation in which each element of the domain corresponds to exactly one element in the codomain.</p>
+
+            <h3>Types of Relations:</h3>
+            <p><strong>1. Reflexive Relation:</strong> A relation R on set A is reflexive if (a, a) ∈ R for all a ∈ A.<br>
+            Example: On set {1,2,3}, R = {(1,1),(2,2),(3,3),(1,2)} is reflexive.</p>
+
+            <p><strong>2. Symmetric Relation:</strong> R is symmetric if (a,b) ∈ R ⇒ (b,a) ∈ R.<br>
+            Example: R = {(1,2),(2,1),(2,3),(3,2)}</p>
+
+            <p><strong>3. Transitive Relation:</strong> R is transitive if (a,b) ∈ R and (b,c) ∈ R ⇒ (a,c) ∈ R.<br>
+            Example: R = {(1,2),(2,3),(1,3)}</p>
+
+            <p><strong>4. Equivalence Relation:</strong> R is reflexive, symmetric, and transitive.<br>
+            Example: Congruence modulo n.</p>
+
+            <h3>Types of Functions:</h3>
+            <p><strong>1. One-to-One (Injective):</strong> Each element of domain maps to a unique element of codomain.<br>
+            Example: f(x) = 2x</p>
+
+            <p><strong>2. Onto (Surjective):</strong> Every element of codomain has a pre-image in domain.<br>
+            Example: f(x) = x³</p>
+
+            <p><strong>3. Bijective:</strong> Function that is both injective and surjective.<br>
+            Example: f(x) = x+1 from Z → Z</p>
+
+            <h3>Important Formulas and Concepts:</h3>
+            <p>• Domain: Set of all first elements of ordered pairs.<br>
+            • Codomain: Set of possible second elements.<br>
+            • Range: Set of all actual second elements.<br>
+            • Composition: (f ∘ g)(x) = f(g(x))<br>
+            • Inverse: f⁻¹(y) = x if f(x) = y<br>
+            • Number of functions from set A (m elements) to set B (n elements) = n^m</p>
+        </div>
+
+        <!-- Examples -->
+        <div class="card" id="examples">
+            <h2>Examples</h2>
+
+            <div class="example">
+                <h3>Example 1: Determine Function</h3>
+                <p><strong>Given:</strong> R = {(1,2),(2,3),(3,4)}<br>
+                <strong>Check:</strong> Is R a function?<br>
+                <strong>Solution:</strong> Each element of domain maps to exactly one element → Yes, function.</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 2: One-to-One Function</h3>
+                <p><strong>Given:</strong> f(x) = 2x + 1<br>
+                <strong>Check:</strong> Is f one-to-one?<br>
+                <strong>Solution:</strong> f(x₁) = f(x₂) ⇒ 2x₁+1 = 2x₂+1 ⇒ x₁ = x₂ → Injective → Yes</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 3: Onto Function</h3>
+                <p><strong>Given:</strong> f(x) = x², f: R → R<br>
+                <strong>Check:</strong> Is f onto?<br>
+                <strong>Solution:</strong> Not all real numbers are squares (e.g., -1) → Not onto</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 4: Composition</h3>
+                <p><strong>Given:</strong> f(x) = x+1, g(x) = 2x<br>
+                <strong>Find:</strong> (f ∘ g)(x)<br>
+                <strong>Solution:</strong> f(g(x)) = f(2x) = 2x + 1</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 5: Inverse Function</h3>
+                <p><strong>Given:</strong> f(x) = 3x - 2<br>
+                <strong>Find:</strong> f⁻¹(x)<br>
+                <strong>Solution:</strong> y = 3x - 2 → x = (y+2)/3 → f⁻¹(x) = (x+2)/3</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 6: Number of Functions</h3>
+                <p><strong>Given:</strong> Set A = {1,2,3}, B = {a,b}<br>
+                <strong>Find:</strong> Number of functions from A to B<br>
+                <strong>Solution:</strong> n^m = 2^3 = 8</p>
+            </div>
+        </div>
+
+        <!-- Questions -->
+        <div class="card" id="questions">
+            <h2>Practice Questions (Advanced MCQ)</h2>
+
+            <div class="question">
+                <h4>Question 1:</h4>
+                <p>Which of the following relations on set {1,2,3} is an equivalence relation?<br>
+                A) R1 = {(1,1),(2,2),(3,3),(1,2)}<br>
+                B) R2 = {(1,1),(2,2),(3,3),(1,2),(2,1)}<br>
+                C) R3 = {(1,1),(2,2),(3,3),(1,2),(2,1),(2,3),(3,2),(1,3),(3,1)}<br>
+                D) R4 = {(1,2),(2,3)}</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 2:</h4>
+                <p>f: R → R, f(x) = 2x + 3. Which property holds?<br>
+                A) Injective only<br>
+                B) Surjective only<br>
+                C) Bijective<br>
+                D) Neither</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 3:</h4>
+                <p>f(x) = x², g(x) = √x, x ≥ 0. Find (g ∘ f)(4)<br>
+                A) 2<br>
+                B) 4<br>
+                C) 16<br>
+                D) 8</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 4:</h4>
+                <p>Inverse of f(x) = 5x - 7 is<br>
+                A) (x+7)/5<br>
+                B) (x-7)/5<br>
+                C) 5x +7<br>
+                D) (5-x)/7</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 5:</h4>
+                <p>Number of functions from set A = {1,2,3,4} to B = {a,b} is<br>
+                A) 4<br>
+                B) 8<br>
+                C) 16<br>
+                D) 12</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 6:</h4>
+                <p>f: R → R, f(x) = x³. Which statement is correct?<br>
+                A) One-to-one only<br>
+                B) Onto only<br>
+                C) Bijective<br>
+                D) Neither</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 7:</h4>
+                <p>Which relation is symmetric but not transitive on {1,2,3}?<br>
+                A) {(1,1),(2,2),(3,3)}<br>
+                B) {(1,2),(2,1),(2,3),(3,2)}<br>
+                C) {(1,2),(2,1),(1,1),(2,2)}<br>
+                D) {(1,2),(2,1),(1,3)}</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 8:</h4>
+                <p>Domain of f(x) = √(x-1) is<br>
+                A) x ≥ 0<br>
+                B) x > 0<br>
+                C) x ≥ 1<br>
+                D) x > 1</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 9:</h4>
+                <p>If f(x) = 2x+3 and g(x) = x², find (f ∘ g)(2)<br>
+                A) 7<br>
+                B) 8<br>
+                C) 11<br>
+                D) 10</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 10:</h4>
+                <p>Which function is not one-to-one?<br>
+                A) f(x) = 3x + 1<br>
+                B) f(x) = x², x ∈ R<br>
+                C) f(x) = x³<br>
+                D) f(x) = 2x - 5</p>
+            </div>
+        </div>
+
+        <!-- Answer Key -->
+        <div class="card" id="answer-key">
+            <h2>Answer Key</h2>
+
+            <div class="answer">
+                <h4>Answer 1:</h4>
+                <p>C) R3; reflexive, symmetric, and transitive</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 2:</h4>
+                <p>C) Bijective; linear function maps R → R one-to-one and onto</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 3:</h4>
+                <p>A) 2; g(f(4)) = g(16) = √16 = 4</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 4:</h4>
+                <p>B) (x+7)/5</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 5:</h4>
+                <p>C) 16; number of functions = 2⁴ = 16</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 6:</h4>
+                <p>C) Bijective; f(x)=x³ is both one-to-one and onto R → R</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 7:</h4>
+                <p>D) {(1,2),(2,1),(1,3)}; symmetric but not transitive</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 8:</h4>
+                <p>C) x ≥ 1; inside square root must be ≥ 0</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 9:</h4>
+                <p>C) 11; f(g(2)) = f(4) = 2*4+3=11</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 10:</h4>
+                <p>B) f(x)=x²; fails one-to-one over R</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

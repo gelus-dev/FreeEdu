@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit and Dimension- FreeEdu Nepal</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+<!-- Navbar (same as index.html) -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">FreeEdu Nepal</a>
+      <button class="navbar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="navbar-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="english.html">English</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="tests.html">Practice</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Unit and Dimension</h1>
+      <p>Learn Unit and Dimension concepts and solved examples ✅</p>
+    </div>
+  </section>
+<!-- Content Section --> <section class="content"> <div class="container"> 
+    <!-- Overview --> 
+     <div class="card" id="overview"> 
+        <h2>Overview</h2> <p><strong>Definition:</strong> 
+            <strong>Unit</strong> is a standard quantity used to measure physical quantities. <strong>Dimension</strong> represents the physical nature of a quantity in terms of basic quantities like Mass (M), Length (L), and Time (T).</p>
+          <h3>Fundamental Quantities & Units:</h3>
+        <p>• Mass (M) – kilogram (kg)<br>
+        • Length (L) – meter (m)<br>
+        • Time (T) – second (s)<br>
+        • Electric current (I) – ampere (A)<br>
+        • Temperature (Θ) – kelvin (K)<br>
+        • Luminous intensity (J) – candela (cd)<br>
+        • Amount of substance (N) – mole (mol)</p>
+
+        <h3>Derived Quantities & Dimensions:</h3>
+        <p>• Velocity: \( v = \frac{L}{T} \) → [L T^-1]<br>
+        • Acceleration: \( a = \frac{L}{T^2} \) → [L T^-2]<br>
+        • Force: \( F = m a \) → [M L T^-2]<br>
+        • Energy/Work: \( E = F \cdot L \) → [M L^2 T^-2]<br>
+        • Power: \( P = \frac{E}{T} \) → [M L^2 T^-3]<br>
+        • Pressure: \( P = \frac{F}{L^2} \) → [M L^-1 T^-2]<br>
+        • Density: \( \rho = \frac{M}{L^3} \) → [M L^-3]<br>
+        • Surface Tension: [M T^-2]<br>
+        • Viscosity: [M L^-1 T^-1]<br>
+        • Angular Momentum: [M L^2 T^-1]<br>
+        • Torque: [M L^2 T^-2]</p>
+
+        <h3>Principle of Homogeneity:</h3>
+        <p>• In any physically meaningful equation, the dimensions on both sides must be identical.<br>
+        • Example: \( s = ut + \frac{1}{2}at^2 \)<br>
+        LHS: [L], RHS: ut → [L], at^2 → [L], dimensionally correct.</p>
+
+        <h3>Tips for Competitive Exams:</h3>
+        <ul>
+            <li>Check dimensions before solving formula-based problems.</li>
+            <li>Use dimensional analysis to find formulas (e.g., period of a pendulum, speed of wave).</li>
+            <li>Trick questions often involve incorrect powers or missing constants.</li>
+            <li>Remember derived quantities involving multiple fundamentals (e.g., angular quantities).</li>
+        </ul>
+    </div>
+
+    <!-- Examples -->
+    <div class="card" id="examples">
+        <h2>Examples</h2>
+
+        <div class="example">
+            <h3>Example 1: Dimensional Formula of Force</h3>
+            <p><strong>Given:</strong> Force \( F = ma \)<br>
+            <strong>Solution:</strong> Mass [M], Acceleration [L T^-2] → Force = [M L T^-2]</p>
+        </div>
+
+        <div class="example">
+            <h3>Example 2: Dimensional Formula of Pressure</h3>
+            <p><strong>Given:</strong> Pressure \( P = \frac{F}{A} \)<br>
+            <strong>Solution:</strong> Force [M L T^-2], Area [L^2] → Pressure = [M L^-1 T^-2]</p>
+        </div>
+
+        <div class="example">
+            <h3>Example 3: Dimensional Consistency Check</h3>
+            <p><strong>Equation:</strong> \( v = u + at \)<br>
+            <strong>Solution:</strong> v, u → [L T^-1], a t → [L T^-2][T] = [L T^-1], Correct.</p>
+        </div>
+
+        <div class="example">
+            <h3>Example 4: Finding Formula Using Dimensions</h3>
+            <p><strong>Problem:</strong> Period T of a simple pendulum depends on length l and gravity g.<br>
+            Assume \( T \propto l^a g^b \)<br>
+            [T] = [L]^a [L T^-2]^b → [T] = [L]^{a+b}[T]^{-2b}<br>
+            Equate powers: -2b = 1 → b = -1/2, a+b = 0 → a = 1/2<br>
+            <strong>Solution:</strong> \( T \propto \sqrt{\frac{l}{g}} \)</p>
+        </div>
+    </div>
+
+    <!-- Questions -->
+    <div class="card" id="questions">
+        <h2>Practice Questions (MCQ)</h2>
+
+        <div class="question">
+            <h4>Question 1:</h4>
+            <p>Dimensional formula of velocity:<br>
+            A) [L T^-2]<br>
+            B) [L T^-1]<br>
+            C) [M L T^-2]<br>
+            D) [M L^2 T^-2]</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 2:</h4>
+            <p>Acceleration has dimensions:<br>
+            A) [L T^-1]<br>
+            B) [L T^-2]<br>
+            C) [M L T^-2]<br>
+            D) [M L^2 T^-2]</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 3:</h4>
+            <p>Dimensional formula of force:<br>
+            A) [M L T^-2]<br>
+            B) [M L^2 T^-2]<br>
+            C) [M L^-1 T^-2]<br>
+            D) [L T^-2]</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 4:</h4>
+            <p>Pressure has dimensions:<br>
+            A) [M L T^-2]<br>
+            B) [M L^-1 T^-2]<br>
+            C) [M L^2 T^-2]<br>
+            D) [L T^-1]</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 5:</h4>
+            <p>Energy has dimensions:<br>
+            A) [M L T^-2]<br>
+            B) [M L^2 T^-2]<br>
+            C) [M L^-1 T^-2]<br>
+            D) [M L^2 T^-3]</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 6:</h4>
+            <p>Which equation is dimensionally correct?<br>
+            A) \( s = ut + \frac{1}{2}at^2 \)<br>
+            B) \( F = m + a \)<br>
+            C) \( v = at^2 \)<br>
+            D) \( P = mv \)</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 7:</h4>
+            <p>Dimensional formula of power:<br>
+            A) [M L^2 T^-3]<br>
+            B) [M L^2 T^-2]<br>
+            C) [M L T^-2]<br>
+            D) [M L^-1 T^-2]</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 8:</h4>
+            <p>Surface tension has dimensions:<br>
+            A) [M T^-2]<br>
+            B) [M L^-1 T^-2]<br>
+            C) [M L^2 T^-2]<br>
+            D) [M L T^-2]</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 9:</h4>
+            <p>Density has dimensional formula:<br>
+            A) [M L^-3]<br>
+            B) [M L^3]<br>
+            C) [L T^-2]<br>
+            D) [M L^-1 T^-2]</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 10:</h4>
+            <p>If \( F = kx^3 \), dimension of k is:<br>
+            A) [M L^-2 T^-2]<br>
+            B) [M L^-1 T^-2]<br>
+            C) [M L T^-2]<br>
+            D) [M L^2 T^-2]</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 11:</h4>
+            <p>Period of a pendulum depends on length l and acceleration g. Find T using dimensions:<br>
+            A) \( T \propto \sqrt{l g} \)<br>
+            B) \( T \propto \sqrt{\frac{l}{g}} \)<br>
+            C) \( T \propto \frac{l}{g} \)<br>
+            D) \( T \propto \frac{g}{l} \)</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 12:</h4>
+            <p>Torque has dimensions:<br>
+            A) [M L T^-2]<br>
+            B) [M L^2 T^-2]<br>
+            C) [M L^2 T^-1]<br>
+            D) [M L T^-1]</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 13:</h4>
+            <p>Angular momentum has dimensions:<br>
+            A) [M L^2 T^-1]<br>
+            B) [M L^2 T^-2]<br>
+            C) [M L T^-2]<br>
+            D) [M L^-1 T^-2]</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 14:</h4>
+            <p>Dimensional formula of kinematic viscosity (ν):<br>
+            A) [L^2 T^-1]<br>
+            B) [L T^-1]<br>
+            C) [M L^-1 T^-1]<br>
+            D) [M L T^-2]</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 15:</h4>
+            <p>Which of the following is dimensionally inconsistent?<br>
+            A) \( F = ma \)<br>
+            B) \( P = \frac{W}{t} \)<br>
+            C) \( v = u + at^2 \)<br>
+            D) \( \rho = \frac{m}{V} \)</p>
+        </div>
+    </div>
+
+    <!-- Answer Key -->
+    <div class="card" id="answer-key">
+        <h2>Answer Key</h2>
+
+        <div class="answer"><h4>Answer 1:</h4><p>[L T^-1]</p></div>
+        <div class="answer"><h4>Answer 2:</h4><p>[L T^-2]</p></div>
+        <div class="answer"><h4>Answer 3:</h4><p>[M L T^-2]</p></div>
+        <div class="answer"><h4>Answer 4:</h4><p>[M L^-1 T^-2]</p></div>
+        <div class="answer"><h4>Answer 5:</h4><p>[M L^2 T^-2]</p></div>
+        <div class="answer"><h4>Answer 6:</h4><p>A) \( s = ut + \frac{1}{2}at^2 \)</p></div>
+        <div class="answer"><h4>Answer 7:</h4><p>[M L^2 T^-3]</p></div>
+        <div class="answer"><h4>Answer 8:</h4><p>[M T^-2]</p></div>
+        <div class="answer"><h4>Answer 9:</h4><p>[M L^-3]</p></div>
+        <div class="answer"><h4>Answer 10:</h4><p>[M L^-2 T^-2]</p></div>
+        <div class="answer"><h4>Answer 11:</h4><p>B) \( T \propto \sqrt{\frac{l}{g}} \)</p></div>
+        <div class="answer"><h4>Answer 12:</h4><p>B) [M L^2 T^-2]</p></div>
+        <div class="answer"><h4>Answer 13:</h4><p>A) [M L^2 T^-1]</p></div>
+        <div class="answer"><h4>Answer 14:</h4><p>A) [L^2 T^-1]</p></div>
+        <div class="answer"><h4>Answer 15:</h4><p>C) \( v = u + at^2 \)</p></div>
+    </div>
+</div>
+
+</section>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  <script src="script.js"></script>
+</body>
+</html>

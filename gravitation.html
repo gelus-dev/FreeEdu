@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravitation- FreeEdu Nepal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar (same as index.html) -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">FreeEdu Nepal</a>
+      <button class="navbar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+     <ul class="navbar-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="english.html">English</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="tests.html">Practice</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Gravitation</h1>
+      <p>Learn Gravitation concepts and solved examples ✅</p>
+    </div>
+  </section>
+<!-- Content Section -->
+<section class="content">
+    <div class="container">
+        <!-- Overview -->
+        <div class="card" id="overview">
+                    <h2>Overview</h2>
+        <p><strong>Definition:</strong> <strong>Gravitation</strong> is the universal force of attraction that acts between all masses. It governs planetary motion, tides, and free-fall, and is described quantitatively by <strong>Newton’s Law of Gravitation</strong>.</p>
+
+        <h3>Key Concepts:</h3>
+        <p><strong>1. Newton’s Law of Gravitation:</strong> The force between two masses \( m_1 \) and \( m_2 \) separated by distance \( r \) is:<br>
+        \( F = G \frac{m_1 m_2}{r^2} \)</p>
+
+        <p><strong>2. Gravitational Constant:</strong> \( G = 6.674 \times 10^{-11} \, \mathrm{Nm^2/kg^2} \)</p>
+
+        <p><strong>3. Acceleration due to Gravity:</strong> On Earth’s surface: \( g = \frac{GM}{R^2} \), where \( M \) and \( R \) are Earth’s mass and radius.</p>
+
+        <p><strong>4. Weight:</strong> \( W = mg \)</p>
+
+        <p><strong>5. Potential Energy:</strong> Gravitational potential energy near Earth: \( U = mgh \)<br>
+        Universal form: \( U = - G \frac{m_1 m_2}{r} \)</p>
+
+        <p><strong>6. Escape Velocity:</strong> \( v_e = \sqrt{\frac{2GM}{R}} \)</p>
+
+        <p><strong>7. Orbital Velocity:</strong> \( v_o = \sqrt{\frac{GM}{r}} \)</p>
+
+        <p><strong>8. Kepler’s Laws:</strong><br>
+        • 1st Law: Orbit of planets is an ellipse with Sun at one focus.<br>
+        • 2nd Law: Line joining planet and Sun sweeps equal areas in equal times.<br>
+        • 3rd Law: \( \frac{T^2}{r^3} = \text{constant} \), \( T \) = orbital period, \( r \) = semi-major axis.</p>
+
+        <p><strong>9. High School Level Formulas:</strong><br>
+        • Gravitational force: \( F = G \frac{m_1 m_2}{r^2} \)<br>
+        • g at height \( h \): \( g_h = g \left( 1 - \frac{2h}{R} \right) \) approx.<br>
+        • g at depth \( d \): \( g_d = g \left( 1 - \frac{d}{R} \right) \) approx.<br>
+        • Work done by gravity: \( W = \int F \, dr \)</p>
+    </div>
+
+    <!-- Examples -->
+    <div class="card" id="examples">
+        <h2>Examples</h2>
+
+        <div class="example">
+            <h3>Example 1: Gravitational Force</h3>
+            <p><strong>Given:</strong> \( m_1 = 5\,\mathrm{kg}, m_2 = 10\,\mathrm{kg}, r = 2\,\mathrm{m} \)<br>
+            <strong>Find:</strong> Force between the masses.<br>
+            <strong>Solution:</strong> \( F = G \frac{5*10}{2^2} = 6.674 \times 10^{-11} * \frac{50}{4} = 8.3425 \times 10^{-10}\, \mathrm{N} \)</p>
+        </div>
+
+        <div class="example">
+            <h3>Example 2: Acceleration due to Gravity at height</h3>
+            <p><strong>Given:</strong> \( h = 1000\,\mathrm{m} \), Earth radius \( R = 6.37 \times 10^6 \, \mathrm{m} \)<br>
+            <strong>Find:</strong> \( g_h \)<br>
+            <strong>Solution:</strong> \( g_h = g \left(1 - \frac{2h}{R}\right) = 9.8(1 - \frac{2000}{6.37*10^6}) \approx 9.7969\,\mathrm{m/s^2} \)</p>
+        </div>
+
+        <div class="example">
+            <h3>Example 3: Escape Velocity</h3>
+            <p><strong>Given:</strong> \( M = 5.972 \times 10^{24}\, \mathrm{kg}, R = 6.37 \times 10^6 \, \mathrm{m} \)<br>
+            <strong>Find:</strong> \( v_e \)<br>
+            <strong>Solution:</strong> \( v_e = \sqrt{\frac{2GM}{R}} = \sqrt{\frac{2*6.674e-11*5.972e24}{6.37e6}} \approx 11.2\,\mathrm{km/s} \)</p>
+        </div>
+
+        <div class="example">
+            <h3>Example 4: Orbital Velocity</h3>
+            <p><strong>Given:</strong> Satellite at \( r = 7 \times 10^6\,\mathrm{m} \) from Earth's center<br>
+            <strong>Find:</strong> \( v_o \)<br>
+            <strong>Solution:</strong> \( v_o = \sqrt{\frac{GM}{r}} = \sqrt{\frac{6.674e-11 * 5.972e24}{7e6}} \approx 7.35\,\mathrm{km/s} \)</p>
+        </div>
+    </div>
+
+    <!-- Questions -->
+    <div class="card" id="questions">
+        <h2>Practice Questions (MCQ)</h2>
+
+        <div class="question">
+            <h4>Question 1:</h4>
+            <p>Force of gravity between 2 masses 3 kg and 6 kg separated by 2 m is:<br>
+            A) \( 1.5 \times 10^{-10}\,N \)<br>
+            B) \( 6.674 \times 10^{-11}\,N \)<br>
+            C) \( 1.0 \times 10^{-10}\,N \)<br>
+            D) \( 5.0 \times 10^{-11}\,N \)</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 2:</h4>
+            <p>Acceleration due to gravity at depth 5 km below Earth surface (R = 6371 km, g = 9.8 m/s²) is:<br>
+            A) 9.792 m/s²<br>
+            B) 9.795 m/s²<br>
+            C) 9.788 m/s²<br>
+            D) 9.800 m/s²</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 3:</h4>
+            <p>Escape velocity from a planet of mass \( 2 \times 10^{24} kg \) and radius \( 4 \times 10^6 m \) is:<br>
+            A) 5 km/s<br>
+            B) 6.49 km/s<br>
+            C) 7 km/s<br>
+            D) 8 km/s</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 4:</h4>
+            <p>Orbital period of satellite in circular orbit radius \( 7 \times 10^6 m \) around Earth (M = 5.972 ×10²⁴ kg):<br>
+            A) 6000 s<br>
+            B) 5820 s<br>
+            C) 5850 s<br>
+            D) 5900 s</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 5:</h4>
+            <p>Gravitational potential energy of 2 kg at height 10 m: (g = 9.8 m/s²)<br>
+            A) 196 J<br>
+            B) 200 J<br>
+            C) 180 J<br>
+            D) 210 J</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 6:</h4>
+            <p>Gravitational acceleration at height h = R/2 from Earth’s surface:<br>
+            A) g/2<br>
+            B) 2g/3<br>
+            C) 4g/9<br>
+            D) 3g/4</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 7:</h4>
+            <p>If a planet’s mass doubles and radius doubles, escape velocity changes by:<br>
+            A) √2 times<br>
+            B) 2 times<br>
+            C) 1/√2 times<br>
+            D) No change</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 8:</h4>
+            <p>Kepler’s 3rd law ratio T²/r³ = constant implies:<br>
+            A) Orbital speed same for all planets<br>
+            B) T² proportional to r³<br>
+            C) All planets have same period<br>
+            D) T² inversely proportional to r³</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 9:</h4>
+            <p>Gravitational field intensity at a point due to mass M at distance r:<br>
+            A) GM/r²<br>
+            B) GM/r<br>
+            C) Gm/r²<br>
+            D) M/r²</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 10:</h4>
+            <p>Which of the following is vector quantity?<br>
+            A) Gravitational potential<br>
+            B) Gravitational force<br>
+            C) Escape velocity<br>
+            D) Gravitational potential energy</p>
+        </div>
+    </div>
+
+    <!-- Answer Key -->
+    <div class="card" id="answer-key">
+        <h2>Answer Key</h2>
+
+        <div class="answer"><h4>Answer 1:</h4><p>\( F = 6.674 \times 10^{-11} * \frac{3*6}{2^2} = 3.0027 \times 10^{-10}\,N \)</p></div>
+        <div class="answer"><h4>Answer 2:</h4><p>\( g_d = g(1 - d/R) = 9.8*(1 - 5/6371) \approx 9.792 m/s² \)</p></div>
+        <div class="answer"><h4>Answer 3:</h4><p>\( v_e = \sqrt{2GM/R} = \sqrt{2*6.674e-11*2e24/4e6} \approx 6.49 km/s \)</p></div>
+        <div class="answer"><h4>Answer 4:</h4><p>\( T = 2π\sqrt{r^3/GM} \approx 5820 s \)</p></div>
+        <div class="answer"><h4>Answer 5:</h4><p>\( U = mgh = 2*9.8*10 = 196 J \)</p></div>
+        <div class="answer"><h4>Answer 6:</h4><p>\( g_h = g(R/(R+h))^2 = 9.8*(2/3)^2 = 4.36 \approx 4.36 m/s² \), closest option 4g/9</p></div>
+        <div class="answer"><h4>Answer 7:</h4><p>\( v_e = \sqrt{2GM/R} \rightarrow \sqrt{2*2M/2R} = \sqrt{2GM/R} \), No change</p></div>
+        <div class="answer"><h4>Answer 8:</h4><p>B) T² proportional to r³</p></div>
+        <div class="answer"><h4>Answer 9:</h4><p>A) GM/r²</p></div>
+        <div class="answer"><h4>Answer 10:</h4><p>B) Gravitational force</p></div>
+    </div>
+</div>
+
+</section>
+
+<!-- MathJax Scripts -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>

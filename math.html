@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math - FreeEdu Nepal</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+/* Main container wrapper */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+/* Responsive grid layout */
+.content .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto-responsive grid */
+  gap: 1.5rem;
+  text-align: center;
+  padding: 0; /* Remove double padding */
+}
+
+/* List styling */
+.content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: contents; /* Li elements take grid slots directly */
+}
+
+/* Card styling */
+.content li {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  padding: 1.2rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+/* Hover effects */
+.content li:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-5px);
+}
+
+/* Link styling */
+.content a {
+  text-decoration: none;
+  color: rgb(218, 198, 136);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+</style>
+</head>
+<body>
+  <!-- Navbar (same as index.html) -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">FreeEdu Nepal</a>
+      <button class="navbar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="navbar-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="english.html">English</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="tests.html">Practice</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+    </div>
+  </nav>
+
+  <!-- Hero / Header -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Mathematics</h1>
+      <p>"Learn formulas, concepts, and practice problems chapter by chapter."</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="content">
+    <div class="container">
+      <ul>
+                <li><a href="set.html">Set</a></li>
+                <li><a href="sequence and series.html">Sequence and series</a></li>
+                        <li><a href="relation and function.html">Relation and function</a></li>
+        <li><a href="matrix and determinant.html">Matrix</a></li>
+        <li><a href="trigonometry.html">Trigonometry</a></li>
+        <li><a href="coordinate geometry.html">Coordinate Geometry</a></li>
+        <li><a href="vector.html">Vector</a></li>
+        <li><a href="mensuration.html">Mensuration</a></li>
+                <li><a href="indices.html">Indices</a></li>
+                        <li><a href="algebra.html">Algebra</a></li>
+
+        <li><a href="quadratic equation.html">Quadratic Equation</a></li>
+        <li><a href="compound inrerest.html">Compound Interest</a></li>
+        <li><a href="limit and continuity.html">Limit and Continuity</a></li>
+        <li><a href="statistics.html">Statistics</a></li>
+        <li><a href="probability.html">Probability</a></li>
+        <li><a href="geometry.html">Geometry</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

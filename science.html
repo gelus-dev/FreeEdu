@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science - FreeEdu Nepal</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+/* Main container wrapper */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+/* Responsive grid layout */
+.content .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto-responsive grid */
+  gap: 1.5rem;
+  text-align: center;
+  padding: 0; /* Remove double padding */
+}
+
+/* List styling */
+.content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: contents; /* Li elements take grid slots directly */
+}
+
+/* Card styling */
+.content li {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  padding: 1.2rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+/* Hover effects */
+.content li:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-5px);
+}
+
+/* Link styling */
+.content a {
+  text-decoration: none;
+  color: rgb(218, 198, 136);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+</style>
+
+</head>
+<body>
+  <!-- Navbar (same as index.html) -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">FreeEdu Nepal</a>
+      <button class="navbar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="navbar-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="english.html">English</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="tests.html">Practice</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+    </div>
+  </nav>
+
+  <!-- Hero / Header -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Science</h1>
+      <p>"Learn  concepts, formulas and practice problems chapter by chapter."</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="content">
+    <h1>Physics</h1>
+    <div class="container">
+      <ul>
+           <li><a href="unit and dimension.html">Unit and Dimension</a></li>
+                <li><a href="force and motion.html">Force and Motion</a></li>
+                        <li><a href="simple machine.html">Simple Machine</a></li>
+        <li><a href="pressure.html">Pressure</a></li>
+        <li><a href="gravitation.html">Gravitation</a></li>
+        <li><a href="heat.html"> Heat</a></li>
+        <li><a href="work energy and power.html">Work,Energy and Power</a></li>
+        <li><a href="optics.html">Optics</a></li>
+                <li><a href="wave and sound.html">Wave and sound</a></li>
+                        <li><a href="electricity and magnetism.html">Eletricity ans Magnetism</a></li>
+        <li><a href="physical constant values.html">Physics Constant Values</a></li>
+      </ul>
+    </div>
+  </section>
+    <section class="content">
+    <h1>Chemistry</h1>
+    <div class="container">
+      <ul>
+           <li><a href="atoms and molecules.html">Atoms and molecules</a></li>
+                <li><a href="periodic table.html">Periodic Table</a></li>
+                        <li><a href="chemical reaction.html">Chemical Reaction</a></li>
+        <li><a href="states of matter.html">States of Matter</a></li>
+        <li><a href="metals and non-metals.html">Metal and non-metals</a></li>
+        <li><a href="acid base and salt.html"> Acid,Base and Salt</a></li>
+        <li><a href="water.html">Water</a></li>
+        <li><a href="some gases.html">Some Gases</a></li>
+                <li><a href="carbon and its compounds.html">Carbon and its compound</a></li>
+                        <li><a href="materials used in daily life.html">Materials used in daily life</a></li>
+        <li><a href="important molecular formulas.html">Important molecular formulas</a></li>
+      </ul>
+    </div>
+  </section>
+    <section class="content">
+    <h1>Biology</h1>
+    <div class="container">
+      <ul>
+           <li><a href="origin and evolution.html">Origin and Evolution</a></li>
+                <li><a href="animal classification.html">Animal Classification</a></li>
+                        <li><a href="animal adaptation.html">Animal Adaptation</a></li>
+        <li><a href="human system.html">Human System</a></li>
+        <li><a href="cell biology.html">Cell Biology</a></li>
+        <li><a href="genetics.html"> Genetics</a></li>
+        <li><a href="ecology.html">Ecology</a></li>
+        <li><a href="plant biodiversity.html">Plant Biodiversity</a></li>
+                <li><a href="scientific names.html">Scientific Names</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

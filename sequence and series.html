@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sequence and Series - FreeEdu Nepal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar (same as index.html) -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">FreeEdu Nepal</a>
+      <button class="navbar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="navbar-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="english.html">English</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="tests.html">Practice</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Sequence and Series</h1>
+      <p>Learn about sequences, series, types, formulas, and solved examples ✅</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+<section class="content">
+    <div class="container">
+        <!-- Overview -->
+        <div class="card" id="overview">
+            <h2>Overview</h2>
+            <p><strong>Definition:</strong> A sequence is an ordered list of numbers, while a series is the sum of the terms of a sequence.</p>
+
+            <h3>Types of Sequences:</h3>
+            <p><strong>1. Arithmetic Sequence (A.P.):</strong> Sequence where the difference between consecutive terms is constant.<br>
+            Example: 2, 5, 8, 11,... (common difference d = 3)</p>
+
+            <p><strong>2. Geometric Sequence (G.P.):</strong> Sequence where the ratio of consecutive terms is constant.<br>
+            Example: 3, 6, 12, 24,... (common ratio r = 2)</p>
+
+            <p><strong>3. Harmonic Sequence:</strong> Sequence whose reciprocals form an arithmetic progression.<br>
+            Example: 1, 1/2, 1/3, 1/4,...</p>
+
+            <h3>Important Formulas:</h3>
+            <p>• n-th term of A.P.: \( a_n = a + (n-1)d \)</p>
+            <p>• Sum of n terms of A.P.: \( S_n = \frac{n}{2}[2a + (n-1)d] \)</p>
+            <p>• n-th term of G.P.: \( a_n = ar^{n-1} \)</p>
+            <p>• Sum of n terms of G.P. (r ≠ 1): \( S_n = a\frac{1-r^n}{1-r} \)</p>
+            <p>• Sum of infinite G.P. (|r|<1): \( S_\infty = \frac{a}{1-r} \)</p>
+            <p>• Sum of first n natural numbers: \( S_n = \frac{n(n+1)}{2} \)</p>
+            <p>• Sum of squares of first n natural numbers: \( S_n = \frac{n(n+1)(2n+1)}{6} \)</p>
+            <p>• Sum of cubes of first n natural numbers: \( S_n = \left[\frac{n(n+1)}{2}\right]^2 \)</p>
+        </div>
+
+        <!-- Examples -->
+        <div class="card" id="examples">
+            <h2>Examples</h2>
+
+            <div class="example">
+                <h3>Example 1: n-th term of A.P.</h3>
+                <p><strong>Given:</strong> A.P. 3, 7, 11,...<br>
+                <strong>Find:</strong> 10th term<br>
+                <strong>Solution:</strong> a = 3, d = 4; a₁₀ = 3 + (10-1)*4 = 3 + 36 = 39</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 2: Sum of n terms of A.P.</h3>
+                <p><strong>Given:</strong> A.P. 2, 5, 8,..., n=20<br>
+                <strong>Find:</strong> Sₙ<br>
+                <strong>Solution:</strong> a = 2, d = 3, n=20; S₂₀ = 20/2[2*2 + 19*3] = 10[4 + 57] = 10*61 = 610</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 3: Sum of n terms of G.P.</h3>
+                <p><strong>Given:</strong> G.P. 3, 6, 12,..., n=5<br>
+                <strong>Find:</strong> S₅<br>
+                <strong>Solution:</strong> a = 3, r = 2; S₅ = 3*(2⁵-1)/(2-1) = 3*(32-1)/1 = 3*31 = 93</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 4: Infinite G.P.</h3>
+                <p><strong>Given:</strong> G.P. 8, 4, 2,...<br>
+                <strong>Find:</strong> Sum to infinity<br>
+                <strong>Solution:</strong> a = 8, r = 1/2; S∞ = 8/(1-1/2) = 8/(1/2) = 16</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 5: Sum of squares</h3>
+                <p><strong>Find:</strong> Sum of squares of first 10 natural numbers<br>
+                <strong>Solution:</strong> S = 10*11*21/6 = 385</p>
+            </div>
+        </div>
+
+        <!-- Questions -->
+       <div class="card" id="questions">
+    <h2>Practice Questions (MCQ)</h2>
+
+    <div class="question">
+        <h4>Question 1:</h4>
+        <p>Find the 15th term of the A.P. 7, 12, 17,...<br>
+        A) 87<br>
+        B) 77<br>
+        C) 82<br>
+        D) 92</p>
+    </div>
+
+    <div class="question">
+        <h4>Question 2:</h4>
+        <p>Sum of first 20 terms of A.P. 5, 9, 13,...<br>
+        A) 950<br>
+        B) 880<br>
+        C) 820<br>
+        D) 900</p>
+    </div>
+
+    <div class="question">
+        <h4>Question 3:</h4>
+        <p>Find the sum of first 8 terms of G.P. 2, 6, 18,...<br>
+        A) 2186<br>
+        B) 2184<br>
+        C) 2180<br>
+        D) 2182</p>
+    </div>
+
+    <div class="question">
+        <h4>Question 4:</h4>
+        <p>Sum to infinity of G.P. 81, 27, 9,...<br>
+        A) 121.5<br>
+        B) 120<br>
+        C) 135<br>
+        D) 150</p>
+    </div>
+
+    <div class="question">
+        <h4>Question 5:</h4>
+        <p>If the sum of first n terms of an A.P. is 3n² + 5n, find the 7th term.<br>
+        A) 59<br>
+        B) 60<br>
+        C) 61<br>
+        D) 62</p>
+    </div>
+
+    <div class="question">
+        <h4>Question 6:</h4>
+        <p>The 5th term of a G.P. is 48 and the 8th term is 384. Find the first term.<br>
+        A) 3<br>
+        B) 2<br>
+        C) 4<br>
+        D) 6</p>
+    </div>
+
+    <div class="question">
+        <h4>Question 7:</h4>
+        <p>Sum of cubes of first 5 natural numbers is:<br>
+        A) 225<br>
+        B) 2250<br>
+        C) 2250<br>
+        D) 225</p>
+    </div>
+
+    <div class="question">
+        <h4>Question 8:</h4>
+        <p>Find the 12th term of G.P. 5, 10, 20,...<br>
+        A) 5120<br>
+        B) 10240<br>
+        C) 20480<br>
+        D) 40960</p>
+    </div>
+
+    <div class="question">
+        <h4>Question 9:</h4>
+        <p>The sum of first n terms of A.P. is 2n² + 3n. Find the 10th term.<br>
+        A) 43<br>
+        B) 44<br>
+        C) 45<br>
+        D) 46</p>
+    </div>
+
+    <div class="question">
+        <h4>Question 10:</h4>
+        <p>Sum of first 6 terms of G.P. 3, 6, 12,...<br>
+        A) 189<br>
+        B) 192<br>
+        C) 195<br>
+        D) 198</p>
+    </div>
+</div>
+
+        <!-- Answer Key -->
+        <div class="card" id="answer-key">
+            <h2>Answer Key</h2>
+
+            <div class="answer">
+                <h4>Answer 1:</h4>
+                <p>a₁₅ = 7 + (15-1)*5 = 7 + 70 = 77</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 2:</h4>
+                <p>S₂₀ = 20/2[2*5 + (20-1)*4] = 10[10 + 76] = 10*86 = 860</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 3:</h4>
+                <p>S₈ = 2*(6⁸-1)/(6-1) = 2*(6⁸-1)/5 = 2*(1679616-1)/5 ≈ 671846</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 4:</h4>
+                <p>S∞ = 81/(1-1/3) = 81/(2/3) = 121.5</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 5:</h4>
+                <p>a₇ = S₇ - S₆ = [3*7²+5*7] - [3*6²+5*6] = (147+35) - (108+30) = 182-138=44</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 6:</h4>
+                <p>a*r⁴ = 48, a*r⁷ = 384 → r³ = 384/48 = 8 → r = 2; a*16 = 48 → a=3</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 7:</h4>
+                <p>S = [5*6/2]² = 15² = 225</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 8:</h4>
+                <p>a₁₂ = 5*2¹¹ = 5*2048 = 10240</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 9:</h4>
+                <p>a₁₀ = S₁₀ - S₉ = [2*100+30] - [2*81+27] = 230-189=41</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 10:</h4>
+                <p>S₆ = 3*(2⁶-1)/(2-1) = 3*(64-1)/1 = 3*63 = 189</p>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  <script src="script.js"></script>
+</body>
+</html>

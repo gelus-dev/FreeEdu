@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix and determinant - FreeEdu Nepal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar (same as index.html) -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">FreeEdu Nepal</a>
+      <button class="navbar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="navbar-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="english.html">English</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="tests.html">Practice</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Sets</h1>
+      <p>Learn key concepts of matrices and determinants with solved examples and questions ✅</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+<section class="content">
+    <div class="container">
+        <!-- Overview -->
+        <div class="card" id="overview">
+            <h2>Overview</h2>
+            <p><strong>Definition:</strong> A <strong>matrix</strong> is a rectangular array of numbers arranged in rows and columns. A <strong>determinant</strong> is a scalar associated with a square matrix, useful in solving linear equations and finding inverses.</p>
+
+            <h3>Types of Matrices:</h3>
+            <p><strong>1. Row Matrix:</strong> Single row, e.g., \( [1,2,3] \)</p>
+            <p><strong>2. Column Matrix:</strong> Single column, e.g., \( \begin{bmatrix}1\\2\\3\end{bmatrix} \)</p>
+            <p><strong>3. Square Matrix:</strong> Rows = Columns, e.g., \( \begin{bmatrix}1 & 2\\3 & 4\end{bmatrix} \)</p>
+            <p><strong>4. Zero Matrix:</strong> All elements 0, e.g., \( \begin{bmatrix}0 & 0\\0 & 0\end{bmatrix} \)</p>
+            <p><strong>5. Identity Matrix:</strong> Diagonal 1s, others 0, e.g., \( I_3 = \begin{bmatrix}1 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1\end{bmatrix} \)</p>
+
+            <h3>Matrix Operations:</h3>
+            <p>• Addition/Subtraction: Element-wise<br>
+            • Scalar Multiplication: Multiply each element by a scalar<br>
+            • Matrix Multiplication: \( (AB)_{ij} = \sum_k A_{ik} B_{kj} \)</p>
+
+            <h3>Determinant Formulas:</h3>
+            <p>• 2×2: \( \det\begin{bmatrix}a & b\\c & d\end{bmatrix} = ad - bc \)<br>
+            • 3×3: \( \det\begin{bmatrix}a & b & c\\d & e & f\\g & h & i\end{bmatrix} = a(ei - fh) - b(di - fg) + c(dh - eg) \)</p>
+        </div>
+
+        <!-- Examples -->
+        <div class="card" id="examples">
+            <h2>Examples</h2>
+
+            <div class="example">
+                <h3>Example 1: Matrix Addition</h3>
+                <p><strong>Given:</strong> \( A = \begin{bmatrix}1 & 2\\3 & 4\end{bmatrix}, B = \begin{bmatrix}5 & 6\\7 & 8\end{bmatrix} \)<br>
+                <strong>Find:</strong> \( A + B \)<br>
+                <strong>Solution:</strong> \( A+B = \begin{bmatrix}6 & 8\\10 & 12\end{bmatrix} \)</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 2: Matrix Multiplication</h3>
+                <p><strong>Given:</strong> \( A = \begin{bmatrix}1 & 2\\3 & 4\end{bmatrix}, B = \begin{bmatrix}2 & 0\\1 & 3\end{bmatrix} \)<br>
+                <strong>Find:</strong> \( AB \)<br>
+                <strong>Solution:</strong> \( AB = \begin{bmatrix}4 & 6\\10 & 12\end{bmatrix} \)</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 3: Determinant of 2×2</h3>
+                <p><strong>Given:</strong> \( A = \begin{bmatrix}3 & 5\\2 & 7\end{bmatrix} \)<br>
+                <strong>Solution:</strong> \( \det(A) = 3*7 - 5*2 = 11 \)</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 4: Determinant of 3×3</h3>
+                <p><strong>Given:</strong> \( A = \begin{bmatrix}1 & 2 & 3\\4 & 5 & 6\\7 & 8 & 9\end{bmatrix} \)<br>
+                <strong>Solution:</strong> \( \det(A) = 0 \)</p>
+            </div>
+        </div>
+
+        <!-- Questions -->
+        <div class="card" id="questions">
+            <h2>Practice Questions (MCQ)</h2>
+
+            <div class="question">
+                <h4>Question 1:</h4>
+                <p>Find \( \det \begin{bmatrix}1 & 2\\3 & 4\end{bmatrix} \).<br>
+                A) 2<br>
+                B) -2<br>
+                C) 1<br>
+                D) -1</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 2:</h4>
+                <p>If \( A = \begin{bmatrix}1 & 0\\2 & 3\end{bmatrix}, B = \begin{bmatrix}4 & 5\\1 & 2\end{bmatrix} \), find \( AB \).<br>
+                A) \( \begin{bmatrix}1 & 0\\2 & 3\end{bmatrix} \)<br>
+                B) \( \begin{bmatrix}4 & 5\\2 & 11\end{bmatrix} \)<br>
+                C) \( \begin{bmatrix}4 & 5\\2 & 6\end{bmatrix} \)<br>
+                D) \( \begin{bmatrix}5 & 2\\8 & 11\end{bmatrix} \)</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 3:</h4>
+                <p>Which is an identity matrix?<br>
+                A) \( \begin{bmatrix}1 & 0\\0 & 1\end{bmatrix} \)<br>
+                B) \( \begin{bmatrix}0 & 1\\1 & 0\end{bmatrix} \)<br>
+                C) \( \begin{bmatrix}1 & 1\\0 & 1\end{bmatrix} \)<br>
+                D) \( \begin{bmatrix}0 & 0\\0 & 0\end{bmatrix} \)</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 4:</h4>
+                <p>Determinant of \( \begin{bmatrix}3 & 2 & 1\\0 & 1 & 4\\2 & 0 & 1\end{bmatrix} \) is:<br>
+                A) 9<br>
+                B) -9<br>
+                C) 7<br>
+                D) -7</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 5:</h4>
+                <p>Find \( \det \begin{bmatrix}1 & 2\\3 & 4\end{bmatrix} + \det \begin{bmatrix}2 & 0\\1 & 3\end{bmatrix} \).<br>
+                A) 5<br>
+                B) 7<br>
+                C) 9<br>
+                D) 11</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 6:</h4>
+                <p>If \( \det(A) = 5 \), what is \( \det(3A) \) for 2×2 matrix?<br>
+                A) 15<br>
+                B) 45<br>
+                C) 30<br>
+                D) 25</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 7:</h4>
+                <p>Determinant of triangular matrix \( \begin{bmatrix}2 & 1 & 3\\0 & 4 & 5\\0 & 0 & 6\end{bmatrix} \) is:<br>
+                A) 48<br>
+                B) 72<br>
+                C) 36<br>
+                D) 24</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 8:</h4>
+                <p>Find inverse of \( A = \begin{bmatrix}1 & 2\\3 & 4\end{bmatrix} \) if exists.<br>
+                A) \( \begin{bmatrix}-2 & 1\\3/2 & -1/2\end{bmatrix} \)<br>
+                B) \( \begin{bmatrix}2 & -1\\-3/2 & 1/2\end{bmatrix} \)<br>
+                C) \( \begin{bmatrix}-1 & 2\\3 & -4\end{bmatrix} \)<br>
+                D) \( \begin{bmatrix}1 & -2\\-3 & 4\end{bmatrix} \)</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 9:</h4>
+                <p>Rank of matrix \( \begin{bmatrix}1 & 2 & 3\\2 & 4 & 6\\1 & 0 & 1\end{bmatrix} \) is:<br>
+                A) 3<br>
+                B) 2<br>
+                C) 1<br>
+                D) 0</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 10:</h4>
+                <p>Which property holds: \( \det(AB) = ? \)<br>
+                A) \( \det(A) + \det(B) \)<br>
+                B) \( \det(A) \det(B) \)<br>
+                C) \( \det(A) - \det(B) \)<br>
+                D) \( \det(A)/\det(B) \)</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 11:</h4>
+                <p>If \( \det(A) = -3 \), then \( \det(A^T) = ? \)<br>
+                A) -3<br>
+                B) 3<br>
+                C) 0<br>
+                D) 1</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 12:</h4>
+                <p>Adjoint of \( \begin{bmatrix}1 & 2\\3 & 4\end{bmatrix} \) is:<br>
+                A) \( \begin{bmatrix}4 & -2\\-3 & 1\end{bmatrix} \)<br>
+                B) \( \begin{bmatrix}-4 & 2\\3 & -1\end{bmatrix} \)<br>
+                C) \( \begin{bmatrix}1 & -3\\-2 & 4\end{bmatrix} \)<br>
+                D) \( \begin{bmatrix}2 & -1\\-4 & 3\end{bmatrix} \)</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 13:</h4>
+                <p>Find determinant of \( A = \begin{bmatrix}1 & 0 & 2\\-1 & 3 & 1\\2 & -1 & 1\end{bmatrix} \).<br>
+                A) 9<br>
+                B) 8<br>
+                C) 7<br>
+                D) 6</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 14:</h4>
+                <p>If \( A = \begin{bmatrix}1 & 2\\3 & 4\end{bmatrix} \), then \( A^2 = ? \)<br>
+                A) \( \begin{bmatrix}7 & 10\\15 & 22\end{bmatrix} \)<br>
+                B) \( \begin{bmatrix}8 & 11\\16 & 25\end{bmatrix} \)<br>
+                C) \( \begin{bmatrix}6 & 8\\12 & 18\end{bmatrix} \)<br>
+                D) \( \begin{bmatrix}5 & 6\\10 & 14\end{bmatrix} \)</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 15:</h4>
+                <p>Eigenvalues of \( \begin{bmatrix}2 & 0\\0 & 3\end{bmatrix} \) are:<br>
+                A) 2, 3<br>
+                B) 1, 5<br>
+                C) 0, 5<br>
+                D) -2, 3</p>
+            </div>
+        </div>
+
+        <!-- Answer Key -->
+        <div class="card" id="answer-key">
+            <h2>Answer Key</h2>
+
+            <div class="answer"><h4>Answer 1:</h4><p>-2</p></div>
+            <div class="answer"><h4>Answer 2:</h4><p>\( \begin{bmatrix}1*4+0*1 & 1*5+0*2\\2*4+3*1 & 2*5+3*2\end{bmatrix} = \begin{bmatrix}4 & 5\\11 & 16\end{bmatrix} \)</p></div>
+            <div class="answer"><h4>Answer 3:</h4><p>\( \begin{bmatrix}1 & 0\\0 & 1\end{bmatrix} \)</p></div>
+            <div class="answer"><h4>Answer 4:</h4><p>17</p></div>
+            <div class="answer"><h4>Answer 5:</h4><p>4</p></div>
+            <div class="answer"><h4>Answer 6:</h4><p>45</p></div>
+            <div class="answer"><h4>Answer 7:</h4><p>48</p></div>
+            <div class="answer"><h4>Answer 8:</h4><p>\( \begin{bmatrix}-2 & 1\\3/2 & -1/2\end{bmatrix} \)</p></div>
+            <div class="answer"><h4>Answer 9:</h4><p>2</p></div>
+            <div class="answer"><h4>Answer 10:</h4><p>\( \det(AB) = \det(A)\det(B) \)</p></div>
+            <div class="answer"><h4>Answer 11:</h4><p>-3</p></div>
+            <div class="answer"><h4>Answer 12:</h4><p>\( \begin{bmatrix}4 & -2\\-3 & 1\end{bmatrix} \)</p></div>
+            <div class="answer"><h4>Answer 13:</h4><p>9</p></div>
+            <div class="answer"><h4>Answer 14:</h4><p>\( \begin{bmatrix}7 & 10\\15 & 22\end{bmatrix} \)</p></div>
+            <div class="answer"><h4>Answer 15:</h4><p>2, 3</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- MathJax Scripts -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>

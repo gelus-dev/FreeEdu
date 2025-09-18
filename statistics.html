@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statistics- FreeEdu Nepal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar (same as index.html) -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">FreeEdu Nepal</a>
+      <button class="navbar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+     <ul class="navbar-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="english.html">English</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="tests.html">Practice</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Statistics</h1>
+      <p>Learn about Statistics concepts, operations and solved examples ✅</p>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+<section class="content">
+    <div class="container">
+        <!-- Overview -->
+        <div class="card" id="overview">
+            <h2>Overview</h2>
+            <p><strong>Definition:</strong> Statistics is the branch of mathematics that deals with collecting, organizing, analyzing, interpreting, and presenting data to make decisions.</p>
+
+            <h3>Types of Statistics:</h3>
+            <p><strong>1. Descriptive Statistics:</strong> Summarizes and describes data.<br>
+            Example: Mean, Median, Mode, Standard Deviation</p>
+
+            <p><strong>2. Inferential Statistics:</strong> Makes predictions or inferences about a population based on sample data.<br>
+            Example: Hypothesis testing, Confidence intervals</p>
+
+            <h3>Measures of Central Tendency:</h3>
+            <p>• <strong>Mean (Arithmetic Average):</strong> \(\bar{x} = \frac{\Sigma x_i}{n}\)<br>
+            • <strong>Median:</strong> Middle value when data is arranged in order<br>
+            • <strong>Mode:</strong> Value occurring most frequently<br>
+            • <strong>Weighted Mean:</strong> \(\bar{x}_w = \frac{\Sigma w_i x_i}{\Sigma w_i}\)</p>
+
+            <h3>Measures of Dispersion:</h3>
+            <p>• <strong>Range:</strong> R = Max - Min<br>
+            • <strong>Variance:</strong> Population: \(\sigma^2 = \frac{\Sigma (x_i - \mu)^2}{N}\)<br>
+            Sample: \(s^2 = \frac{\Sigma (x_i - \bar{x})^2}{n-1}\)<br>
+            • <strong>Standard Deviation:</strong> Population: \(\sigma = \sqrt{\sigma^2}\), Sample: \(s = \sqrt{s^2}\)<br>
+            • <strong>Coefficient of Variation:</strong> \(CV = \frac{SD}{Mean} \times 100\%\)</p>
+
+            <h3>Moments, Skewness & Kurtosis:</h3>
+            <p>• <strong>Raw Moment (r-th order):</strong> \(m_r = \frac{\Sigma x_i^r}{n}\)<br>
+            • <strong>Central Moment (r-th order):</strong> \(\mu_r = \frac{\Sigma (x_i - \bar{x})^r}{n}\)<br>
+            • <strong>Skewness:</strong> \(Sk = \frac{\mu_3}{\sigma^3}\)<br>
+            • <strong>Kurtosis:</strong> \(Ku = \frac{\mu_4}{\sigma^4}\)</p>
+
+            <h3>Correlation & Regression:</h3>
+            <p>• <strong>Correlation Coefficient (r):</strong> \(r = \frac{\Sigma (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\Sigma (x_i - \bar{x})^2 \Sigma (y_i - \bar{y})^2}}\)<br>
+            • <strong>Regression Line of y on x:</strong> \(y = a + bx, b = \frac{\Sigma (x_i - \bar{x})(y_i - \bar{y})}{\Sigma (x_i - \bar{x})^2}, a = \bar{y} - b\bar{x}\)<br>
+            • <strong>Regression Line of x on y:</strong> \(x = a' + b'y, b' = \frac{\Sigma (x_i - \bar{x})(y_i - \bar{y})}{\Sigma (y_i - \bar{y})^2}, a' = \bar{x} - b'\bar{y}\)</p>
+        </div>
+
+        <!-- Examples -->
+        <div class="card" id="examples">
+            <h2>Examples</h2>
+
+            <div class="example">
+                <h3>Example 1: Mean</h3>
+                <p><strong>Given:</strong> Data: 2, 4, 6, 8, 10<br>
+                <strong>Solution:</strong> Mean = (2+4+6+8+10)/5 = 30/5 = 6</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 2: Median</h3>
+                <p><strong>Given:</strong> Data: 7, 3, 9, 5, 1<br>
+                <strong>Solution:</strong> Arrange: 1,3,5,7,9 → Median = 5</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 3: Mode</h3>
+                <p><strong>Given:</strong> Data: 4, 4, 6, 7, 4, 9<br>
+                <strong>Solution:</strong> Mode = 4 (occurs most frequently)</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 4: Standard Deviation</h3>
+                <p><strong>Given:</strong> Data: 2, 4, 6<br>
+                <strong>Solution:</strong> Mean = 4, Variance = [(2-4)² + (4-4)² + (6-4)²]/3 = (4+0+4)/3 = 8/3 → SD = √(8/3) ≈ 1.632</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 5: Correlation Coefficient</h3>
+                <p><strong>Given:</strong> X: 1,2,3; Y: 2,3,5<br>
+                <strong>Solution:</strong> r = [Σ(x_i-2)(y_i-10/3)] / √[Σ(x_i-2)² Σ(y_i-10/3)²] → r ≈ 0.981</p>
+            </div>
+
+            <div class="example">
+                <h3>Example 6: Regression Line of y on x</h3>
+                <p><strong>Given:</strong> X:1,2,3; Y:2,3,5<br>
+                <strong>Solution:</strong> b = Σ(x_i-2)(y_i-10/3)/Σ(x_i-2)² = 1.5, a = 10/3 - 1.5*2 = -1/6 → y = -1/6 + 1.5x</p>
+            </div>
+        </div>
+
+        <!-- Questions -->
+        <div class="card" id="questions">
+            <h2>Practice Questions</h2>
+
+            <div class="question">
+                <h4>Question 1:</h4>
+                <p>Find the mean of 5, 7, 9, 12, 15.</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 2:</h4>
+                <p>Find the median of 3, 1, 4, 2, 5.</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 3:</h4>
+                <p>Find the mode of 2, 3, 4, 2, 5, 2, 3.</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 4:</h4>
+                <p>Compute standard deviation of 1, 2, 3.</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 5:</h4>
+                <p>Compute variance for data: 2, 4, 6.</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 6:</h4>
+                <p>Data: 5,7,7,8,9,9,9. Find mean and standard deviation.</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 7:</h4>
+                <p>Data: X:1,2,3; Y:2,3,5. Find correlation coefficient.</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 8:</h4>
+                <p>Data: X:1,2,3; Y:2,3,5. Find regression line of y on x.</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 9:</h4>
+                <p>Compute skewness for data: 2, 4, 6, 8, 10.</p>
+            </div>
+
+            <div class="question">
+                <h4>Question 10:</h4>
+                <p>Compute kurtosis for data: 1, 2, 3, 4, 5.</p>
+            </div>
+        </div>
+
+        <!-- Answer Key -->
+        <div class="card" id="answer-key">
+            <h2>Answer Key</h2>
+
+            <div class="answer">
+                <h4>Answer 1:</h4>
+                <p>Mean = 48/5 = 9.6</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 2:</h4>
+                <p>Median = 3</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 3:</h4>
+                <p>Mode = 2</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 4:</h4>
+                <p>SD = √[(1+0+1)/3] = 0.816</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 5:</h4>
+                <p>Variance = 8/3 ≈ 2.667</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 6:</h4>
+                <p>Mean = 7.857, SD ≈ 1.46</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 7:</h4>
+                <p>Correlation coefficient r ≈ 0.981</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 8:</h4>
+                <p>Regression line y = -1/6 + 1.5x</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 9:</h4>
+                <p>Skewness Sk = 0 (data is symmetric)</p>
+            </div>
+
+            <div class="answer">
+                <h4>Answer 10:</h4>
+                <p>Kurtosis Ku ≈ 1.7 (less than normal, platykurtic)</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  <script src="script.js"></script>
+</body>
+</html>

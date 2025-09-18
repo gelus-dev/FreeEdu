@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compound Interest - FreeEdu Nepal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar (same as index.html) -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">FreeEdu Nepal</a>
+      <button class="navbar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="navbar-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="english.html">English</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="tests.html">Practice</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Compound Interest</h1>
+      <p>Learn about Compound Interest concepts, operations and solved examples ✅</p>
+    </div>
+  </section>
+
+  <!-- Content Section --> <section class="content"> <div class="container"> <!-- Overview --> <div class="card" id="overview"> <h2>Overview</h2> <p><strong>Definition:</strong> <strong>Compound Interest (CI)</strong> is the interest calculated on the initial principal and also on the accumulated interest of previous periods. It is widely used in finance and competitive exams.</p>
+  
+        <h3>Formula:</h3>
+        <p>• <strong>CI Formula:</strong> \( A = P \left(1 + \frac{r}{100}\right)^n \)<br>
+        Where:<br>
+        \( A \) = Amount after n periods<br>
+        \( P \) = Principal<br>
+        \( r \) = Rate of interest per period (%)<br>
+        \( n \) = Number of periods</p>
+
+        <p>• <strong>Compound Interest:</strong> \( CI = A - P = P \left( \left(1 + \frac{r}{100}\right)^n - 1 \right) \)</p>
+
+        <h3>Types:</h3>
+        <p>• <strong>Annually Compounded:</strong> Interest calculated once per year.<br>
+        • <strong>Half-Yearly Compounded:</strong> Interest calculated twice per year, \( r \) and \( n \) adjusted accordingly.<br>
+        • <strong>Quarterly Compounded:</strong> Interest calculated four times per year.<br>
+        • <strong>Monthly Compounded:</strong> Interest calculated twelve times per year.</p>
+
+        <h3>Approximation for Small Interest:</h3>
+        <p>When interest is small, \( CI \approx P \cdot n \cdot \frac{r}{100} + \frac{P \cdot n(n-1) r^2}{20000} \)</p>
+    </div>
+
+    <!-- Examples -->
+    <div class="card" id="examples">
+        <h2>Examples</h2>
+
+        <div class="example">
+            <h3>Example 1: Simple Compound Interest</h3>
+            <p><strong>Given:</strong> \( P = 1000, r = 10\%, n = 2 \)<br>
+            <strong>Find:</strong> Compound Interest<br>
+            <strong>Solution:</strong> \( A = 1000 (1 + 0.10)^2 = 1000 \cdot 1.21 = 1210 \)<br>
+            \( CI = 1210 - 1000 = 210 \)</p>
+        </div>
+
+        <div class="example">
+            <h3>Example 2: Half-Yearly Compounding</h3>
+            <p><strong>Given:</strong> \( P = 5000, r = 12\%, n = 2 \text{ years, half-yearly} \)<br>
+            <strong>Find:</strong> Amount<br>
+            <strong>Solution:</strong> Half-yearly rate \( = 6\% \), periods \( = 4 \)<br>
+            \( A = 5000 (1 + 0.06)^4 = 5000 \cdot 1.2625 = 6312.5 \)<br>
+            \( CI = 6312.5 - 5000 = 1312.5 \)</p>
+        </div>
+
+        <div class="example">
+            <h3>Example 3: CI Approximation</h3>
+            <p><strong>Given:</strong> \( P = 2000, r = 5\%, n = 3 \)<br>
+            <strong>Solution:</strong> \( CI \approx 2000 \cdot 3 \cdot 0.05 + \frac{2000 \cdot 3 \cdot 2 \cdot 25}{20000} = 300 + 15 = 315 \)</p>
+        </div>
+
+        <div class="example">
+            <h3>Example 4: Quarterly Compounding</h3>
+            <p><strong>Given:</strong> \( P = 10000, r = 8\%, n = 1 \text{ year, quarterly} \)<br>
+            <strong>Solution:</strong> Quarterly rate \( = 2\% \), periods \( = 4 \)<br>
+            \( A = 10000 (1 + 0.02)^4 = 10000 \cdot 1.08243216 \approx 10824.32 \)<br>
+            \( CI = 10824.32 - 10000 = 824.32 \)</p>
+        </div>
+    </div>
+
+    <!-- Questions -->
+    <div class="card" id="questions">
+        <h2>Practice Questions (MCQ)</h2>
+
+        <div class="question">
+            <h4>Question 1:</h4>
+            <p>Find the compound interest on Rs. 5000 at 10% per annum for 2 years.<br>
+            A) 1000<br>
+            B) 1050<br>
+            C) 1100<br>
+            D) 1200</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 2:</h4>
+            <p>A sum of Rs. 8000 amounts to Rs. 9240 in 2 years at compound interest. Find the rate of interest.<br>
+            A) 7%<br>
+            B) 8%<br>
+            C) 9%<br>
+            D) 10%</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 3:</h4>
+            <p>Rs. 12000 is lent at 6% per annum compound interest, half-yearly. Find amount after 1 year.<br>
+            A) 12732<br>
+            B) 12744<br>
+            C) 12756<br>
+            D) 12800</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 4:</h4>
+            <p>Principal = 1500, rate = 8%, time = 3 years, compounded annually. CI is:<br>
+            A) 374.40<br>
+            B) 374.30<br>
+            C) 375<br>
+            D) 376</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 5:</h4>
+            <p>Find CI for Rs. 2000 at 5% per annum for 3 years using approximation.<br>
+            A) 310<br>
+            B) 315<br>
+            C) 320<br>
+            D) 325</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 6:</h4>
+            <p>A sum of Rs. 6000 doubles itself in 10 years. Find approximate rate of interest per annum.<br>
+            A) 7%<br>
+            B) 8%<br>
+            C) 6%<br>
+            D) 5%</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 7:</h4>
+            <p>Amount = Rs. 12100, Principal = Rs. 10000, n = 2 years. Find rate.<br>
+            A) 10%<br>
+            B) 9.5%<br>
+            C) 10.5%<br>
+            D) 11%</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 8:</h4>
+            <p>Rs. 5000 at 12% per annum compounded quarterly for 1 year. Find CI.<br>
+            A) 618<br>
+            B) 624<br>
+            C) 630<br>
+            D) 640</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 9:</h4>
+            <p>Principal = Rs. 4000, CI for 2 years = Rs. 848, find rate per annum.<br>
+            A) 10%<br>
+            B) 11%<br>
+            C) 12%<br>
+            D) 13%</p>
+        </div>
+
+        <div class="question">
+            <h4>Question 10:</h4>
+            <p>Principal = 2000, rate = 8%, CI for 3 years compounded annually. Amount = ?<br>
+            A) 2519.36<br>
+            B) 2512.96<br>
+            C) 2500<br>
+            D) 2520</p>
+        </div>
+    </div>
+
+    <!-- Answer Key -->
+    <div class="card" id="answer-key">
+        <h2>Answer Key</h2>
+
+        <div class="answer"><h4>Answer 1:</h4><p>1050</p></div>
+        <div class="answer"><h4>Answer 2:</h4><p>8%</p></div>
+        <div class="answer"><h4>Answer 3:</h4><p>12732</p></div>
+        <div class="answer"><h4>Answer 4:</h4><p>374.40</p></div>
+        <div class="answer"><h4>Answer 5:</h4><p>315</p></div>
+        <div class="answer"><h4>Answer 6:</h4><p>7%</p></div>
+        <div class="answer"><h4>Answer 7:</h4><p>10%</p></div>
+        <div class="answer"><h4>Answer 8:</h4><p>618</p></div>
+        <div class="answer"><h4>Answer 9:</h4><p>10%</p></div>
+        <div class="answer"><h4>Answer 10:</h4><p>2519.36</p></div>
+    </div>
+</div>
+</section>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>

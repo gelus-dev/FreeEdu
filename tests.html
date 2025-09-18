@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Sets - FreeEdu Nepal</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+/* Main container wrapper */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+/* Responsive grid layout */
+.content .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto-responsive grid */
+  gap: 1.5rem;
+  text-align: center;
+  padding: 0; /* Remove double padding */
+}
+
+/* List styling */
+.content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: contents; /* Li elements take grid slots directly */
+}
+
+/* Card styling */
+.content li {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  padding: 1.2rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+/* Hover effects */
+.content li:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-5px);
+}
+
+/* Link styling */
+.content a {
+  text-decoration: none;
+  color: rgb(218, 198, 136);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+</style>
+
+</head>
+<body>
+  <!-- Navbar (same as index.html) -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">FreeEdu Nepal</a>
+      <button class="navbar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="navbar-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a href="english.html">English</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="tests.html">Practice</a></li>
+                <li><a href="tips.html">Tips</a></li>
+            </ul>
+    </div>
+  </nav>
+
+  <!-- Hero / Header -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Model Sets</h1>
+<p>Boost your exam preparation with these carefully designed practice sets. Test your knowledge, improve speed, and get ready for success!</p>
+</div>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="content">
+    <div class="container">
+      <ul>
+           <li><a href="set-1.html">Set-1</a></li>
+                      <li><a href="set-2.html">Set-2</a></li>
+                                <li><a href="set-3.html">Set-3</a></li>
+                      <li><a href="set-4.html">Set-4</a></li>
+                      <li><a href="set-5.html">Set-5</a></li>
+
+
+      </ul>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

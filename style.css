@@ -1,0 +1,266 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url('bg.jpeg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    
+    backdrop-filter: blur(10px);
+     background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+    max-width: 1600px;
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: hsl(32, 80%, 58%);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Navbar menu */
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 3px 20px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.navbar-menu li a:hover {
+    color: #162530;
+    background: rgba(188, 212, 229, 0.8);
+    border: 2px solid #fff;
+}
+
+/* Hamburger toggle */
+.navbar-toggle {
+    display: none; /* hidden on desktop */
+    background: transparent;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Active hamburger animation */
+.navbar-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.navbar-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.navbar-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Responsive: Tablets & small screens */
+@media (max-width: 880px) {
+    .navbar-toggle {
+        display: block; /* show hamburger */
+    }
+
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.7rem !important;
+        position: fixed;
+        height: 100vh;
+        width: 250px;
+        top: 0;
+        right: 0;
+        padding: 5rem 1.5rem;
+        backdrop-filter: none;
+        background: rgba(0, 0, 0, 1);
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-menu.active {
+        transform: translateX(0);
+    }
+
+    .navbar {
+        backdrop-filter: none;
+         background: rgba(0, 0, 0, 0.9);
+    }
+}
+
+/* Extra small screens (mobile) */
+@media (max-width: 480px) {
+    .navbar-container {
+        padding: 0 1rem;
+    }
+
+    .navbar-logo {
+        font-size: 1.7rem;
+    }
+
+    .navbar-menu li a {
+        font-size: 1.2rem;
+        padding: 3px 15px;
+    }
+    .navbar {
+    
+        backdrop-filter: none;
+
+     background: rgba(0, 0, 0,0.9);
+}
+}
+
+/* H section */
+.hero {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #d8cdcd;
+    background: url('bg.jpeg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Default hero text */
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.hero-content p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Responsive hero text: Tablets */
+@media (max-width: 880px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+     .hero {
+        height: 46vh;
+    }
+    .hero-content p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Responsive hero text: Mobile */
+@media (max-width: 480px) {
+    .hero {
+        height: 35vh;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: 1.3rem;
+    }
+}
+
+    /* Container wrapper */
+    .container {
+    max-width: 95vw;
+      margin: 0 auto;
+      padding: 0.5rem;
+    }
+
+    /* Grid for CHAPTER sections */
+    .content .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+      gap: 1.5rem;
+      text-align: left;
+    }
+
+
+    .content .container .card {
+      background: rgba(120, 108, 108, 0.1);
+      backdrop-filter: blur(8px);
+      padding: 1.5rem;
+      border-radius: 10px;
+      transition: 0.3s ease;
+      color: rgb(218, 198, 136);
+      font-weight: 500;
+      font-size: 2rem;
+      cursor: default;
+    }
+    .content .container .card p{
+      color: #fff;
+      font-size: 1.5rem;
+    }
+
+    .content .container .card:hover {
+      background: rgba(100, 77, 77, 0.25);
+      transform: translateY(-5px);
+    }
+
+    /* Responsive for tablets */
+    @media (max-width: 768px) {
+      .content .container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    /* Responsive for mobile */
+    @media (max-width: 480px) {
+      .content .container {
+        grid-template-columns: 1fr;
+      }
+      .content .container .card {
+        font-size: 1rem;
+        padding: 1rem;
+      }
+    }
