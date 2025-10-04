@@ -1,337 +1,413 @@
-/* ===== IMPORT NEEDED FONT WEIGHTS ===== */
+/* ============================================
+   FREEEDU NEPAL - MAIN STYLESHEET
+   Description: Responsive educational website
+   Author: Your Name
+   Last Updated: 2025
+   ============================================ */
+
+/* ===== IMPORT GOOGLE FONTS ===== */
+/* This loads the Inter font from Google with different weights (400=normal, 500=medium, 600=semi-bold, 700=bold) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* ===== CSS VARIABLES ===== */
+/* ===== CSS VARIABLES (REUSABLE VALUES) ===== */
+/* 💡 TIP: Change colors here once, and they update everywhere! */
 :root {
-    /* Colors */
-    --primary-color: hsl(32, 80%, 58%);
-    --text-white: #fff;
-    --text-light: #ddd;
-    --text-hero: #d8cdcd;
-    --text-accent: #f5e6c5;
-    --card-title: rgb(218, 198, 136);
+    /* Brand Colors */
+    --primary-color: hsl(32, 80%, 58%);    /* Orange - Main brand color */
     
-    /* Backgrounds */
-    --bg-dark: rgba(0, 0, 0, 0.7);
-    --bg-dark-solid: rgba(0, 0, 0, 0.9);
-    --bg-black: rgba(0, 0, 0, 1);
-    --bg-card: rgba(120, 108, 108, 0.1);
-    --bg-card-hover: rgba(100, 77, 77, 0.25);
-    --bg-nav-hover: rgba(188, 212, 229, 0.8);
+    /* Text Colors */
+    --text-white: #fff;                     /* Pure white text */
+    --text-light: #ddd;                     /* Light gray text */
+    --text-hero: #d8cdcd;                   /* Hero section text color */
+    --text-accent: #f5e6c5;                 /* Accent text (cream) */
+    --card-title: rgb(218, 198, 136);       /* Card heading color (golden) */
     
-    /* Spacing */
-    --nav-height: 80px;
-    --max-width: 1600px;
+    /* Background Colors */
+    --bg-dark: rgba(0, 0, 0, 0.7);         /* Semi-transparent dark (70% opacity) */
+    --bg-dark-solid: rgba(0, 0, 0, 0.9);   /* More solid dark (90% opacity) */
+    --bg-black: rgba(0, 0, 0, 1);          /* Pure black */
+    --bg-card: rgba(120, 108, 108, 0.1);   /* Card background (very light) */
+    --bg-card-hover: rgba(100, 77, 77, 0.25); /* Card hover state (darker) */
+    --bg-nav-hover: rgba(188, 212, 229, 0.8); /* Navigation hover (light blue) */
+    
+    /* Layout Sizes */
+    --nav-height: 80px;                     /* Navigation bar height */
+    --max-width: 1600px;                    /* Maximum content width */
 }
 
-/* ===== RESET & BASE ===== */
+/* ===== RESET DEFAULT BROWSER STYLES ===== */
+/* This removes default spacing and ensures consistent sizing across all browsers */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    margin: 0;                  /* Remove default margins */
+    padding: 0;                 /* Remove default padding */
+    box-sizing: border-box;     /* Include padding/border in element's total width/height */
+    font-family: 'Inter', sans-serif; /* Apply Inter font to all elements */
 }
 
-html {
-    height: 100%;
-}
-
+/* ===== BODY (MAIN PAGE CONTAINER) ===== */
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background: url('bg.jpeg') no-repeat center center fixed;
-    background-size: cover;
-    color: var(--text-white);
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    min-height: 100vh;          /* Minimum height = full viewport height */
+    display: flex;              /* Use flexbox layout */
+    flex-direction: column;     /* Stack children vertically */
+    background: url('bg.jpeg') no-repeat center center fixed; /* Background image */
+    background-size: cover;     /* Make image cover entire screen */
+    color: var(--text-white);   /* Default text color */
+    overflow-x: hidden;         /* Prevent horizontal scrolling */
 }
 
-/* ===== NAVBAR ===== */
+/* ============================================
+   NAVIGATION BAR
+   💡 The sticky top menu that stays visible when scrolling
+   ============================================ */
+
+/* Main navbar container */
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: var(--nav-height);
-    width: 100%;
-    position: sticky;
-    top: 0;
-    background: var(--bg-dark);
-    backdrop-filter: blur(10px);
-    z-index: 999;
-    flex-shrink: 0; /* Prevent navbar from shrinking */
+    display: flex;              /* Use flexbox for centering */
+    justify-content: center;    /* Center horizontally */
+    align-items: center;        /* Center vertically */
+    height: var(--nav-height);  /* Use the height from CSS variables */
+    width: 100%;                /* Full width */
+    position: sticky;           /* Stick to top when scrolling */
+    top: 0;                     /* Stick to the very top */
+    background: rgba(0, 0, 0, 0.75); /* Semi-transparent black background */
+    backdrop-filter: blur(10px); /* Blur effect behind navbar */
+    z-index: 999;               /* Stay above all other content */
+    flex-shrink: 0;             /* Don't shrink when content is short */
 }
 
+/* Inner container that limits max width */
 .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 2rem;
-    max-width: var(--max-width);
+    display: flex;              /* Flexbox for spacing */
+    justify-content: space-between; /* Logo on left, menu on right */
+    align-items: center;        /* Vertically center items */
+    width: 100%;                /* Full width */
+    padding: 0 2rem;            /* Left and right padding (2rem = 32px) */
+    max-width: var(--max-width); /* Don't exceed maximum width */
 }
 
+/* Logo/Brand name */
 .navbar-logo {
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    text-decoration: none;
-    cursor: pointer;
+    font-size: 2rem;            /* Large text (2rem = 32px) */
+    font-weight: 600;           /* Semi-bold */
+    color: #10b981;             /* Green color */
+    text-decoration: none;      /* Remove underline */
+    cursor: pointer;            /* Show pointer cursor on hover */
 }
 
+/* Navigation menu (list of links) */
 .navbar-menu {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    list-style: none;
+    display: flex;              /* Horizontal layout */
+    align-items: center;        /* Center items vertically */
+    gap: 1.5rem;                /* Space between menu items (1.5rem = 24px) */
+    list-style: none;           /* Remove bullet points */
 }
 
+/* Individual menu links */
 .navbar-menu li a {
-    text-decoration: none;
-    color: var(--text-white);
-    font-size: 1.3rem;
-    font-weight: 500;
-    padding: 3px 20px;
-    border-radius: 20px;
-    border: 2px solid transparent;
-    transition: all 0.3s ease;
-    white-space: nowrap;
+    text-decoration: none;      /* Remove underline */
+    color: var(--text-white);   /* White text */
+    font-size: 1.3rem;          /* Link text size (1.3rem = 20.8px) */
+    font-weight: 500;           /* Medium weight */
+    padding: 3px 20px;          /* Vertical and horizontal padding */
+    border-radius: 20px;        /* Rounded corners */
+    border: 2px solid transparent; /* Invisible border (becomes visible on hover) */
+    transition: all 0.3s ease;  /* Smooth animation for all changes (0.3 seconds) */
+    white-space: nowrap;        /* Don't break text into multiple lines */
 }
 
+/* Menu link hover effect */
 .navbar-menu li a:hover {
-    color: #162530;
-    background: var(--bg-nav-hover);
-    border: 2px solid var(--text-white);
+    color: #162530;             /* Dark text on hover */
+    background: var(--bg-nav-hover); /* Light blue background */
+    border-color: var(--text-white); /* White border appears */
 }
 
-/* Hamburger Toggle */
+/* Hamburger menu button (hidden on desktop, visible on mobile) */
 .navbar-toggle {
-    display: none;
-    background: transparent;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    z-index: 1000;
+    display: none;              /* Hidden by default */
+    background: transparent;    /* No background */
+    padding: 10px;              /* Clickable area padding */
+    border: none;               /* No border */
+    cursor: pointer;            /* Pointer cursor */
+    z-index: 1000;              /* Stay above menu */
 }
 
+/* Hamburger menu lines */
 .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background: var(--text-white);
-    transition: all 0.3s ease-in-out;
+    display: block;             /* Each bar is a block element */
+    width: 25px;                /* Width of each line */
+    height: 3px;                /* Thickness of each line */
+    margin: 5px auto;           /* Spacing between lines */
+    background: var(--text-white); /* White color */
+    transition: all 0.3s ease-in-out; /* Smooth animation */
 }
 
+/* Hamburger animation when active (clicked) */
 .navbar-toggle.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg); /* Top line rotates to form X */
 }
 .navbar-toggle.active .bar:nth-child(2) {
-    opacity: 0;
+    opacity: 0;                 /* Middle line disappears */
 }
 .navbar-toggle.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg); /* Bottom line rotates to form X */
 }
 
-/* ===== HERO SECTION ===== */
+/* ============================================
+   HERO SECTION
+   💡 The big banner at the top of each page
+   ============================================ */
 .hero {
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--text-hero);
-    background: url('bg.jpeg') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    flex-shrink: 0; /* Prevent hero from shrinking */
+    height: 60vh;               /* Height = 60% of viewport height */
+    display: flex;              /* Flexbox for centering */
+    justify-content: center;    /* Center horizontally */
+    align-items: center;        /* Center vertically */
+    text-align: center;         /* Center text */
+    color: #fff;                /* White text */
+    background: url('bg.jpeg') no-repeat center center fixed; /* Background image */
+    background-size: cover;     /* Cover entire area */
+    flex-shrink: 0;             /* Don't shrink */
 }
 
+/* Hero heading (large title) */
 .hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+    font-size: 4rem;            /* Very large text (4rem = 64px) */
+    margin-bottom: 1rem;        /* Space below heading */
 }
 
+/* Hero paragraph (subtitle) */
 .hero-content p {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 2rem;            /* Large text (2rem = 32px) */
+    margin-bottom: 2rem;        /* Space below paragraph */
 }
 
-/* ===== CONTENT SECTION ===== */
+/* ============================================
+   CONTENT SECTION
+   💡 Main content area with cards/boxes
+   ============================================ */
+
+/* Container wrapper (limits width) */
 .container {
-    max-width: 95vw;
-    margin: 0 auto;
-    padding: 0.5rem;
+    max-width: 95vw;            /* Maximum 95% of viewport width */
+    margin: 0 auto;             /* Center horizontally */
+    padding: 0.5rem;            /* Small padding around content */
 }
 
+/* Content wrapper */
 .content {
-    flex-shrink: 0; /* Prevent content from shrinking */
+    flex-shrink: 0;             /* Don't shrink */
 }
 
+/* Grid layout for cards */
 .content .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
-    gap: 1.5rem;
-    text-align: left;
+    display: grid;              /* Use CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr)); /* Responsive columns */
+    gap: 1.5rem;                /* Space between cards (1.5rem = 24px) */
+    text-align: left;           /* Left-align text inside cards */
 }
 
+/* Individual content cards */
 .content .container .card {
-    background: var(--bg-card);
-    backdrop-filter: blur(8px);
-    padding: 1.5rem;
-    border-radius: 10px;
-    transition: 0.3s ease;
-    color: var(--card-title);
-    font-weight: 500;
-    font-size: 2rem;
-    cursor: default;
+    background: var(--bg-card);  /* Light semi-transparent background */
+    backdrop-filter: blur(8px);  /* Blur effect behind card */
+    padding: 1.5rem;             /* Inner spacing (1.5rem = 24px) */
+    border-radius: 10px;         /* Rounded corners */
+    transition: 0.3s ease;       /* Smooth animation on hover */
+    color: var(--card-title);    /* Golden text color */
+    font-weight: 500;            /* Medium weight */
+    font-size: 1.8rem;           /* Large text (1.8rem = 28.8px) */
+    cursor: default;             /* Normal cursor (not clickable) */
 }
 
+/* Paragraphs inside cards */
 .content .container .card p {
-    color: var(--text-white);
-    font-size: 1.5rem;
+    color: var(--text-white);    /* White text */
+    font-size: 1.3rem;           /* Medium-large text (1.3rem = 20.8px) */
 }
 
+/* Card hover effect */
 .content .container .card:hover {
-    background: var(--bg-card-hover);
-    transform: translateY(-5px);
+    background: var(--bg-card-hover); /* Darker background on hover */
+    transform: translateY(-5px);      /* Lift up by 5 pixels */
 }
 
-/* ===== FOOTER - STICKY AT BOTTOM ===== */
+/* ============================================
+   FOOTER
+   💡 Bottom section with contact info
+   ============================================ */
 .footer {
-    width: 100%;
-    min-height: 12vh;
-    background: rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(10px);
-    color: var(--text-light);
-    
-    /* Flexbox for centering content */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding: 40px 10px;
-    
-    /* Stick to bottom */
-    margin-top: auto;
+    width: 100%;                 /* Full width */
+    min-height: 10vh;            /* Minimum 10% of viewport height */
+    background: rgba(0, 0, 0, 0.75); /* Semi-transparent black */
+    backdrop-filter: blur(10px); /* Blur effect */
+    color: var(--text-light);    /* Light gray text */
+    display: flex;               /* Flexbox for centering */
+    flex-direction: column;      /* Stack vertically */
+    justify-content: center;     /* Center vertically */
+    align-items: center;         /* Center horizontally */
+    gap: 5px;                    /* Space between items */
+    padding: 10px 40px 40px;     /* Top, left/right, bottom padding */
+    margin-top: auto;            /* Push to bottom of page */
 }
 
+/* Footer links */
 .footer a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 500;
-    transition: text-decoration 0.2s;
+    color: #fff;                 /* White text */
+    text-decoration: none;       /* No underline */
+    font-weight: 500;            /* Medium weight */
+    transition: text-decoration 0.2s; /* Smooth underline animation */
 }
 
+/* Footer link hover effect */
 .footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline;  /* Show underline on hover */
 }
 
+/* ============================================
+   RESPONSIVE DESIGN
+   💡 Adjustments for different screen sizes
+   ============================================ */
 
-
-/* ===== RESPONSIVE DESIGN ===== */
-
-/* Tablets & Small Screens (880px) */
+/* TABLETS & SMALL LAPTOPS (880px and below) */
 @media (max-width: 880px) {
+    /* Show hamburger menu button */
     .navbar-toggle {
         display: block;
     }
 
+    /* Make navbar background solid (not transparent) */
     .navbar {
         backdrop-filter: none;
         background: var(--bg-dark-solid);
     }
 
+    /* Mobile menu sidebar */
     .navbar-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.7rem !important;
-        position: fixed;
-        height: 100vh;
-        width: 250px;
-        top: 0;
-        right: 0;
-        padding: 5rem 1.5rem;
-        backdrop-filter: none;
-        background: var(--bg-black);
-        transform: translateX(100%);
-        transition: transform 0.3s ease;
+        flex-direction: column;  /* Stack links vertically */
+        align-items: flex-start; /* Align to left */
+        gap: 1.7rem;             /* Space between links */
+        position: fixed;         /* Fixed position */
+        height: 100vh;           /* Full height */
+        width: 250px;            /* 250px wide */
+        top: 0;                  /* Align to top */
+        right: 0;                /* Align to right */
+        padding: 5rem 1.5rem;    /* Top and side padding */
+        backdrop-filter: none;   /* No blur */
+        background: var(--bg-black); /* Black background */
+        transform: translateX(100%); /* Hidden off-screen to the right */
+        transition: transform 0.3s ease; /* Smooth slide animation */
     }
 
+    /* Show menu when active */
     .navbar-menu.active {
-        transform: translateX(0);
+        transform: translateX(0); /* Slide in from right */
     }
 
+    /* Smaller hero section */
     .hero {
-        height: 46vh;
+        height: 46vh;            /* Reduce height to 46% */
     }
 
+    /* Smaller hero heading */
     .hero-content h1 {
-        font-size: 3rem;
+        font-size: 3rem;         /* Reduce to 3rem (48px) */
     }
 
+    /* Smaller hero paragraph */
     .hero-content p {
+        font-size: 1.5rem;       /* Reduce to 1.5rem (24px) */
+    }
+
+    /* Smaller card text */
+    .content .container .card {
         font-size: 1.5rem;
     }
+    .content .container .card p {
+        font-size: 1rem;
+    }
 }
 
-/* Tablets (768px) */
+/* TABLETS (768px and below) */
 @media (max-width: 768px) {
+    /* Single column layout */
     .content .container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr); /* One column */
+    }
+    
+    /* Keep same card sizes as 880px */
+    .content .container .card {
+        font-size: 1.5rem;
+    }
+    .content .container .card p {
+        font-size: 1rem;
     }
 }
 
-/* Mobile (480px) */
+/* MOBILE PHONES (480px and below) */
 @media (max-width: 480px) {
+    /* Compact navbar spacing */
     .navbar-container {
-        padding: 0 1rem;
+        padding: 0 1rem;         /* Less padding */
     }
 
+    /* Smaller logo */
     .navbar-logo {
         font-size: 1.7rem;
     }
 
+    /* Smaller menu links */
     .navbar-menu li a {
         font-size: 1.2rem;
         padding: 3px 15px;
     }
 
-    .navbar {
-        backdrop-filter: none;
-        background: var(--bg-dark-solid);
-    }
-
+    /* Even smaller hero */
     .hero {
-        height: 35vh;
+        height: 35vh;            /* Only 35% of screen height */
     }
 
+    /* Smaller hero text */
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .hero-content p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
-    .content .container {
-        grid-template-columns: 1fr;
-    }
-
+    /* Compact cards */
     .content .container .card {
-        font-size: 1rem;
-        padding: 1rem;
+        font-size: 1rem;         /* Normal text size */
+        padding: 1rem;           /* Less padding */
     }
 
+    /* Compact footer */
     .footer {
-        min-height: 20vh;
+        min-height: 20px;
         padding: 10px;
         font-size: 0.8rem;
         text-align: center;
     }
 
+    /* Smaller footer links */
     .footer a {
         font-size: 0.8rem;
     }
 }
+
+/* ============================================
+   💡 BEGINNER TIPS:
+   
+   1. To change colors: Modify values in :root section at the top
+   2. To change spacing: Look for padding and margin values
+   3. To change text sizes: Modify font-size values (1rem = 16px)
+   4. To add new pages: Copy this structure and change content
+   5. Media queries control mobile design - test on different screens!
+   
+   Common Units:
+   - rem: Relative to root font size (1rem = 16px usually)
+   - px: Fixed pixels
+   - vh: Viewport height (100vh = full screen height)
+   - vw: Viewport width (100vw = full screen width)
+   - %: Percentage of parent element
+   ============================================ */
