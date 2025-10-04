@@ -210,7 +210,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    padding: 20px 10px;
+    padding: 40px 10px;
     
     /* Stick to bottom */
     margin-top: auto;
@@ -227,10 +227,7 @@ body {
     text-decoration: underline;
 }
 
-.footer .tagline {
-    font-style: italic;
-    color: var(--text-accent);
-}
+
 
 /* ===== RESPONSIVE DESIGN ===== */
 
@@ -328,16 +325,13 @@ body {
     }
 
     .footer {
-        min-height: auto;
-        padding: 20px 10px;
-        font-size: 0.9rem;
-    }
-
-    .footer .tagline {
-        font-size: 0.85rem;
+        min-height: 20vh;
+        padding: 10px;
+        font-size: 0.8rem;
+        text-align: center;
     }
 
     .footer a {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
