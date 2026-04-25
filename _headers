@@ -1,0 +1,4 @@
+# Save as _headers (no extension)
+/*
+  script-src: https://pagead2.googlesyndication.com
+  Content-Security-Policy: script-src 'self' https://pagead2.googlesyndication.com;
